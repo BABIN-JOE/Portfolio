@@ -2,10 +2,11 @@ import { Code, Heart, Coffee, Zap } from 'lucide-react';
 
 const About = () => {
   const skills = [
-    { category: "Frontend", items: ["React", "TypeScript", "Next.js", "Tailwind CSS", "Vue.js"] },
-    { category: "Backend", items: ["Node.js", "Python", "Express", "Django", "PostgreSQL"] },
+    { category: "Programming Languages", items: ["Python", "Java", "Robot Programming (KRL, VAL)", "HTML (Markup)", "CSS (Styling)"] },
+    { category: "Frameworks & Libraries", items: ["Flask", "Vosk", "Yolo", "Numpy", "Pandas", "Scikit-learn"] },
     { category: "AI/ML", items: ["TensorFlow", "PyTorch", "OpenCV", "Natural Language Processing"] },
-    { category: "Tools", items: ["Docker", "AWS", "Git", "MongoDB", "Redis"] }
+    { category: "Tools & Platforms", items: ["Git", "Vercel", "Google Colab","GitHub", "VS Code", "Autocad", "SolidWorks", "Robodk", "Canva"] },
+    { category: "Core Competencies", items: ["Problem Solving", "3D Technology & Printing", "Data Structures & Algorithms (DSA)", "SQL", "DBMS", "Product Design"] }
   ];
 
   const interests = [
@@ -36,20 +37,25 @@ const About = () => {
             </h2>
             <div className="prose prose-lg max-w-none text-muted-foreground space-y-6">
               <p>
-                My journey into software development began during my college years when I first 
-                encountered the magic of turning ideas into working applications. What started as 
-                curiosity quickly evolved into a deep passion for problem-solving through code.
+                From inquisitive clicks to meaningful code, my technological journey has been an ever-evolving ride driven by creativity, curiosity, and determination.
               </p>
               <p>
-                Over the years, I've specialized in full-stack development with a particular focus 
-                on AI/ML applications and document processing systems. I believe in writing clean, 
-                maintainable code and creating user experiences that are both functional and delightful.
+                It all began with an intense interest in how things work. I wasn't merely using software—I wanted to know the reasoning behind it. This curiosity took me through studying Computer Science with specialism in Cyber Security, where I developed a solid base in both developing and defending computer systems.
               </p>
               <p>
-                When I'm not coding, I'm usually exploring new technologies, contributing to open-source 
-                projects, or learning about the latest developments in artificial intelligence and 
-                machine learning. I'm particularly interested in offline-first applications and 
-                edge computing solutions.
+                My university days weren't all about theory. I applied ideas into real-world problems by working on actual projects, experimenting with AI, intelligent document processing, real-time transcription, and creating offline-first apps. With every project, I honed my skills in Python, JavaScript, Flask, React, and others.
+              </p>
+              <p>
+                The more I programmed, the more I understood: wonderful software is not all about syntax—it's about creating solutions that make a difference. That mentality influenced my side projects such as Fluent Edge and NeuroDoc, where I combined machine learning, OCR, and NLP to develop tools that increase productivity and accessibility.
+              </p>
+              <p>
+                In addition to technical development, I developed passion for design and user experience. My portfolio testifies to that: clean, interactive, and a reflection of myself.
+              </p>
+              <p>
+                Now, as a developer, I keep this journey going by building influential work, discovering new tools, and teaching via code. From smarter apps, to open-source collaboration, to discovering the next tech frontier—I'm in.
+              </p>
+              <p>
+                The journey doesn't stop—it's just beginning 🚀
               </p>
             </div>
           </div>
@@ -82,6 +88,21 @@ const About = () => {
                 </div>
               </div>
             ))}
+          </div>
+        </section>
+
+        {/* Languages Known Section */}
+        <section className="mb-20">
+          <h2 className="font-display font-semibold text-2xl sm:text-3xl mb-12 text-center">
+            Languages Known
+          </h2>
+          <div className="gradient-card p-6 hover-scale text-center">
+            <div className="flex flex-wrap gap-4 justify-center">
+              <span className="px-3 py-1 bg-muted rounded-full text-sm text-muted-foreground hover:text-foreground transition-colors">English (Bilingual)</span>
+              <span className="px-3 py-1 bg-muted rounded-full text-sm text-muted-foreground hover:text-foreground transition-colors">Tamil (Native)</span>
+              <span className="px-3 py-1 bg-muted rounded-full text-sm text-muted-foreground hover:text-foreground transition-colors">Hindi (Intermediate)</span>
+              <span className="px-3 py-1 bg-muted rounded-full text-sm text-muted-foreground hover:text-foreground transition-colors">Spanish (Beginner)</span>
+            </div>
           </div>
         </section>
 
