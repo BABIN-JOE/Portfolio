@@ -37,9 +37,18 @@ const Home = () => {
         
         {/* Floating particles effect */}
         <div className="absolute inset-0 overflow-hidden">
-          <div className="absolute top-1/4 left-1/4 w-2 h-2 bg-primary rounded-full animate-float"></div>
-          <div className="absolute top-3/4 right-1/4 w-1 h-1 bg-primary/60 rounded-full animate-float animate-delay-400"></div>
-          <div className="absolute top-1/2 right-1/3 w-1.5 h-1.5 bg-primary/40 rounded-full animate-float animate-delay-600"></div>
+          <div className="absolute top-[10%] left-[20%] w-2 h-2 bg-green-500/30 rounded-full animate-float"></div>
+          <div className="absolute top-[30%] left-[60%] w-1.5 h-1.5 bg-green-500/20 rounded-full animate-float animate-delay-400"></div>
+          <div className="absolute top-[50%] left-[40%] w-1 h-1 bg-green-500/40 rounded-full animate-float animate-delay-600"></div>
+          <div className="absolute top-[70%] left-[70%] w-2 h-2 bg-green-500/10 rounded-full animate-float animate-delay-800"></div>
+          <div className="absolute top-[80%] left-[10%] w-1.5 h-1.5 bg-green-500/30 rounded-full animate-float animate-delay-1000"></div>
+          <div className="absolute top-[20%] left-[80%] w-1 h-1 bg-green-500/20 rounded-full animate-float animate-delay-1200"></div>
+          <div className="absolute top-[60%] left-[50%] w-2 h-2 bg-green-500/10 rounded-full animate-float animate-delay-1400"></div>
+          <div className="absolute top-[40%] left-[30%] w-1.5 h-1.5 bg-green-500/30 rounded-full animate-float animate-delay-1600"></div>
+          <div className="absolute top-[75%] left-[55%] w-2 h-2 bg-green-500/20 rounded-full animate-float animate-delay-1800"></div>
+          <div className="absolute top-[15%] left-[65%] w-1 h-1 bg-green-500/30 rounded-full animate-float animate-delay-2000"></div>
+          <div className="absolute top-[35%] left-[85%] w-1.5 h-1.5 bg-green-500/20 rounded-full animate-float animate-delay-2200"></div>
+          <div className="absolute top-[55%] left-[15%] w-2 h-2 bg-green-500/10 rounded-full animate-float animate-delay-2400"></div>
         </div>
 
         <div className="relative z-10 text-center max-w-4xl mx-auto">
