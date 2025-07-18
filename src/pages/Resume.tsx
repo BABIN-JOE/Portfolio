@@ -234,12 +234,16 @@ const Resume = () => {
               Let's connect and explore how we can create something amazing together.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button className="glow-button">
-                Contact Me
-              </Button>
-              <Button variant="outline">
-                View Projects
-              </Button>
+              <a href="/contact" className="w-full sm:w-auto">
+                <Button className="glow-button w-full">
+                  Contact Me
+                </Button>
+              </a>
+              <a href="/projects" className="w-full sm:w-auto">
+                <Button variant="outline" className="w-full">
+                  View Projects
+                </Button>
+              </a>
             </div>
           </div>
         </section>
