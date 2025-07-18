@@ -466,12 +466,16 @@ const Certificates = () => {
               Check out my complete portfolio and projects to see these skills in action.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button className="glow-button">
-                View Projects
-              </Button>
-              <Button variant="outline">
-                Download Resume
-              </Button>
+              <a href="/projects" className="w-full sm:w-auto">
+                <Button className="glow-button w-full">
+                  View Projects
+                </Button>
+              </a>
+              <a href="/resume.pdf" download className="w-full sm:w-auto">
+                <Button variant="outline" className="w-full">
+                  Download Resume
+                </Button>
+              </a>
             </div>
           </div>
         </section>
