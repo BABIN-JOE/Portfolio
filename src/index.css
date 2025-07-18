@@ -1,0 +1,203 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Babin Joe Portfolio Design System - Dark tech theme with neon green accents */
+
+@layer base {
+  :root {
+    /* Dark theme base */
+    --background: 224 71% 4%;
+    --foreground: 213 31% 91%;
+
+    --card: 224 71% 6%;
+    --card-foreground: 213 31% 91%;
+
+    --popover: 224 71% 6%;
+    --popover-foreground: 213 31% 91%;
+
+    /* Neon green primary */
+    --primary: 142 76% 36%;
+    --primary-foreground: 224 71% 4%;
+    --primary-glow: 142 86% 28%;
+
+    --secondary: 215 27% 17%;
+    --secondary-foreground: 213 31% 91%;
+
+    --muted: 215 27% 12%;
+    --muted-foreground: 217 19% 60%;
+
+    --accent: 142 76% 36%;
+    --accent-foreground: 224 71% 4%;
+
+    --destructive: 0 76% 60%;
+    --destructive-foreground: 213 31% 91%;
+
+    --border: 215 27% 17%;
+    --input: 215 27% 17%;
+    --ring: 142 76% 36%;
+
+    --radius: 0.75rem;
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-glow)));
+    --gradient-hero: linear-gradient(135deg, hsl(var(--background)) 0%, hsl(215 27% 8%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(var(--card)) 0%, hsl(215 27% 8%) 100%);
+    
+    /* Shadows and glows */
+    --shadow-glow: 0 0 40px hsl(var(--primary-glow) / 0.3);
+    --shadow-card: 0 10px 30px -10px hsl(0 0% 0% / 0.3);
+    --shadow-elegant: 0 20px 60px -20px hsl(var(--primary) / 0.2);
+
+    /* Animation timings */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+
+  .light {
+    /* Light theme override */
+    --background: 0 0% 100%;
+    --foreground: 224 71% 4%;
+    --card: 0 0% 100%;
+    --card-foreground: 224 71% 4%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 224 71% 4%;
+    --primary: 142 76% 36%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 210 40% 96%;
+    --secondary-foreground: 224 71% 4%;
+    --muted: 210 40% 96%;
+    --muted-foreground: 215 16% 47%;
+    --accent: 142 76% 36%;
+    --accent-foreground: 0 0% 100%;
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 142 76% 36%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+  }
+}
+
+@layer components {
+  /* Glow button component */
+  .glow-button {
+    @apply relative overflow-hidden rounded-full px-8 py-4 font-semibold transition-all duration-300;
+    background: var(--gradient-primary);
+    box-shadow: var(--shadow-glow);
+  }
+
+  .glow-button:hover {
+    @apply scale-105;
+    box-shadow: var(--shadow-glow), 0 0 60px hsl(var(--primary-glow) / 0.4);
+  }
+
+  .glow-button:before {
+    @apply absolute inset-0 opacity-0 transition-opacity duration-300;
+    content: '';
+    background: linear-gradient(45deg, transparent 30%, rgba(255,255,255,0.1) 50%, transparent 70%);
+    transform: translateX(-100%);
+  }
+
+  .glow-button:hover:before {
+    @apply opacity-100;
+    animation: shimmer 0.6s ease-out;
+  }
+
+  /* Profile image with glow */
+  .profile-glow {
+    @apply rounded-full border-4 border-primary/20;
+    box-shadow: var(--shadow-elegant), 0 0 80px hsl(var(--primary) / 0.15);
+  }
+
+  /* Animated text */
+  .typing-animation {
+    @apply border-r-2 border-primary;
+    animation: blink 1s infinite;
+  }
+
+  /* Card with gradient */
+  .gradient-card {
+    background: var(--gradient-card);
+    box-shadow: var(--shadow-card);
+    @apply rounded-2xl border border-border/50;
+  }
+
+  /* Hover scale animation */
+  .hover-scale {
+    @apply transition-transform duration-300 hover:scale-105;
+  }
+
+  /* Tech logo styling */
+  .tech-logo {
+    @apply opacity-60 transition-all duration-300 hover:opacity-100 hover:scale-110;
+    filter: grayscale(1);
+  }
+
+  .tech-logo:hover {
+    filter: grayscale(0);
+  }
+}
+
+@layer utilities {
+  /* Animation keyframes */
+  @keyframes shimmer {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+  }
+
+  @keyframes blink {
+    0%, 50% { border-color: hsl(var(--primary)); }
+    51%, 100% { border-color: transparent; }
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+  }
+
+  /* Animation utilities */
+  .animate-fade-in-up {
+    animation: fadeInUp 0.6s ease-out;
+  }
+
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+
+  .animate-delay-200 {
+    animation-delay: 0.2s;
+  }
+
+  .animate-delay-400 {
+    animation-delay: 0.4s;
+  }
+
+  .animate-delay-600 {
+    animation-delay: 0.6s;
+  }
+
+  /* Gradient text */
+  .gradient-text {
+    @apply bg-clip-text text-transparent;
+    background-image: var(--gradient-primary);
+  }
+}
