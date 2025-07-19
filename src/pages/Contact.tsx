@@ -296,7 +296,7 @@ const Contact = () => {
               <div>
                 <h3 className="font-semibold mb-2">What technologies do you specialize in?</h3>
                 <p className="text-muted-foreground text-sm">
-                  I specialize in React, Node.js, Python, AI/ML, and cloud technologies like AWS.
+                  I specialize in Python, Java, AI/ML, Developing both the hardwares and softwares in Robotics and Drones.
                 </p>
               </div>
               <div>

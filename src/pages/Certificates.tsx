@@ -1,5 +1,6 @@
 import { Award, Calendar, ExternalLink } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { Link } from 'react-router-dom';
 
 const Certificates = () => {
   const certificates = [
@@ -466,14 +467,14 @@ const Certificates = () => {
               Check out my complete portfolio and projects to see these skills in action.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="#projects">
-                <Button variant="secondary" className="mt-4">
+              <Link to="/projects" className="w-full sm:w-auto">
+                <Button className="glow-button w-full">
                   View Projects
                 </Button>
-              </a>
+              </Link>
               <a href="/resume.pdf" download className="w-full sm:w-auto">
                 <Button variant="outline" className="w-full">
-                  Download Resume
+                    Download Resume
                 </Button>
               </a>
             </div>
