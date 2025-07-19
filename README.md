@@ -1,101 +1,167 @@
 
-# 💫 Babin Joe's Developer Portfolio
+# 💼 Babin Joe's Developer Portfolio
 
-A sleek, modern, and animated personal portfolio built using **React**, **Tailwind CSS**, **Framer Motion**, and **ShadCN UI**.  
-Easily customizable and designed to showcase your skills, projects, certifications, experience, and more — all with dark/light theme support.
+This is a sleek and interactive developer portfolio built with **React**, **TypeScript**, **Tailwind CSS**, and **Vite**. It showcases Babin Joe’s work, including projects, certificates, education, and resume — along with a dark/light mode toggle and animated, responsive UI.
 
----
+![Banner](public/portfolio-banner.png) <!-- You can add a banner image to your public folder and update this path -->
 
-## 🚀 Live Site
+## 🔗 Live Site
 
-🔗 [https://babin-joe-portfolio.vercel.app](https://babin-joe-portfolio.vercel.app)
-
----
-
-## 📸 Features
-
-- 🌗 Dark / Light mode toggle
-- 🎯 Smooth page transitions with Framer Motion
-- 🧩 Modular component-based structure
-- 🪄 Beautifully animated sections (Projects, About, Education, Contact, etc.)
-- 📱 Fully responsive (Mobile + Desktop)
-- 📜 Customizable content via JSON/data config
-- 📥 Working contact form using **FormSubmit** (or plug your own backend)
-- 🖼️ Interactive illustrations & gradient backgrounds
+➡️ [https://babin-joe-portfolio.vercel.app/](https://babin-joe-portfolio.vercel.app/)
 
 ---
 
-## 📁 Project Structure
+## 🚀 Features
 
-```
-src/
-├── assets/            # Images, icons, and media
-├── components/        # Reusable UI components
-├── constants/         # Data for projects, education, etc.
-├── pages/             # Individual pages (About, Projects, Contact, etc.)
-├── App.tsx            # Root component
-├── main.tsx           # Entry point
-```
+- 🌙 Dark/Light Mode Toggle  
+- ⚡ Fast and optimized with Vite  
+- 💬 Contact form powered by Vercel Serverless Function  
+- 🧭 Smooth client-side routing via React Router  
+- 🎨 Styled with Tailwind CSS + ShadCN UI  
+- 📱 Fully Responsive across devices  
+- 🔍 SEO-Friendly Structure  
+- 🔄 Auto Scroll-to-Top on route change  
+- 🧪 TypeScript for type safety  
+- 📂 Organized code with modular components  
+- 📜 Markdown-supported and clean README  
 
 ---
 
 ## 🛠️ Tech Stack
 
-- **React** + **TypeScript**
-- **Tailwind CSS** for styling
-- **Framer Motion** for animations
-- **Lucide Icons** for icons
-- **ShadCN UI** for component design
+- **React**  
+- **TypeScript**  
+- **Tailwind CSS**  
+- **ShadCN UI**  
+- **Vite**  
+- **React Router**  
+- **Lucide Icons**  
+- **Vercel (Hosting + API)**  
 
 ---
 
-## 🧑‍💻 Getting Started
+## 📁 Folder Structure
+
+```
+Portfolio/
+├── public/
+│   └── (favicons, og images, etc.)
+├── src/
+│   ├── assets/
+│   ├── components/
+│   │   ├── Navigation.tsx
+│   │   ├── Footer.tsx
+│   │   └── ScrollToTop.tsx
+│   ├── pages/
+│   │   ├── Home.tsx
+│   │   ├── About.tsx
+│   │   ├── Projects.tsx
+│   │   ├── Certificates.tsx
+│   │   ├── Education.tsx
+│   │   ├── Resume.tsx
+│   │   ├── Contact.tsx
+│   │   └── NotFound.tsx
+│   ├── components/ui/ (ShadCN UI components)
+│   ├── App.tsx
+│   └── main.tsx
+├── vercel.json
+├── package.json
+├── index.cjs (contact form backend)
+├── tailwind.config.ts
+└── tsconfig.json
+```
+
+---
+
+## 📦 Installation & Development
 
 1. **Clone the repository**
-   ```bash
-   git clone https://github.com/BABIN-JOE/Portfolio.git
-   cd Portfolio
-   ```
+
+```bash
+git clone https://github.com/BABIN-JOE/Portfolio.git
+cd Portfolio
+```
 
 2. **Install dependencies**
-   ```bash
-   npm install
-   ```
 
-3. **Start the development server**
-   ```bash
-   npm run dev
-   ```
+```bash
+npm install
+```
 
-4. Visit: [http://localhost:5173](http://localhost:5173)
+3. **Start development server**
 
----
+```bash
+npm run dev
+```
 
-## ✍️ Customize Your Info
+4. **Start backend (contact API)**
 
-- Update your personal details in:
-  - `src/constants/index.ts`
-  - `src/pages/About.tsx`, `Projects.tsx`, etc.
-
-- Replace images and icons in:
-  - `src/assets/`
+```bash
+node index.cjs
+```
 
 ---
 
-## 📬 Contact
+## 🧑‍💻 Deployment (Vercel)
 
-Want to connect or hire?
+The project is deployed using Vercel. It includes a [Serverless Function](https://vercel.com/docs/functions) (`index.cjs`) to handle contact form submissions securely and efficiently.
 
-- GitHub: [github.com/BABIN-JOE](https://github.com/BABIN-JOE)
-- LinkedIn: [linkedin.com/in/babin-joe](https://www.linkedin.com/in/babin-joe/)
-- Email: Use the contact form on the site ✉️
+To deploy manually:
+
+```bash
+vercel deploy
+```
+
+To run locally via Vercel:
+
+```bash
+vercel dev
+```
+
+---
+
+## 📫 Contact Form Backend
+
+The backend is a Vercel serverless function defined in `index.cjs`. It uses **nodemailer** to send emails to your address when a user submits the contact form.
+
+Make sure to set these environment variables in Vercel or `.env.local`:
+
+```env
+EMAIL_USER=your_email@example.com
+EMAIL_PASS=your_app_password
+EMAIL_TO=your_destination_email@example.com
+```
+
+---
+
+## 🎯 Improvements in Progress
+
+- [x] Scroll-to-top on route change  
+- [x] Contact form routing bug fixed  
+- [x] Responsive mobile nav bar  
+- [ ] Add animations using Framer Motion  
+- [ ] Project filtering or tag system  
+- [ ] Multilingual support  
+
+---
+
+## 🧠 Inspiration
+
+This portfolio is custom-built to reflect Babin Joe’s personality, technical skillset, and UI/UX preferences — sleek, techy, with interactive glowing touches.
 
 ---
 
 ## 📜 License
 
-This project is open source under the [MIT License](LICENSE).
+This project is licensed under the **MIT License**. Feel free to fork and customize, but credit is appreciated.
 
 ---
 
-> Built with 💖 by Babin Joe
+## 🙌 Author
+
+**Babin Joe**  
+🔗 [GitHub](https://github.com/BABIN-JOE) | [LinkedIn](https://www.linkedin.com/in/babin-joe/)
+
+---
+
+> Built with ❤️ by Babin Joe
