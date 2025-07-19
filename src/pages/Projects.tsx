@@ -182,9 +182,9 @@ const Projects = () => {
               I'm always open to discussing new opportunities and exciting projects. 
               Let's build something amazing together!
             </p>
-            <a href="/contact" className="inline-block">
-              <Button className="glow-button" size="sm">
-                Get In Touch
+            <a href="#contact">
+              <Button variant="secondary" className="mt-4">
+                Get in Touch
               </Button>
             </a>
           </div>
