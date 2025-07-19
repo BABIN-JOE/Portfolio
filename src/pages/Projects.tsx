@@ -1,5 +1,7 @@
 import { Github, ExternalLink, Star } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { Link } from 'react-router-dom';
+
 
 const Projects = () => {
   const projects = [
@@ -182,13 +184,16 @@ const Projects = () => {
               I'm always open to discussing new opportunities and exciting projects. 
               Let's build something amazing together!
             </p>
-            <a href="#contact">
-              <Button variant="secondary" className="mt-4">
-                Get in Touch
-              </Button>
-            </a>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Link to="/contact" className="w-full sm:w-auto">
+                <Button className="glow-button w-full" size="sm">
+                  Get In Touch
+                </Button>
+              </Link>
+            </div>
           </div>
         </section>
+
       </div>
     </div>
   );
