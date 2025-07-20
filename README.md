@@ -160,7 +160,7 @@ This project is licensed under the **MIT License**. Feel free to fork and custom
 ## 🙌 Author
 
 **Babin Joe**  
-🔗 [GitHub](https://github.com/BABIN-JOE) | [LinkedIn](https://www.linkedin.com/in/babin-joe/)
+🔗 [Portfolio](https://babin-joe.vercel.app/) | [GitHub](https://github.com/BABIN-JOE) | [LinkedIn](https://www.linkedin.com/in/babin-joe/)
 
 ---
 
