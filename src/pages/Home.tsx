@@ -62,12 +62,10 @@ const Home = () => {
           </div>
 
           {/* Main Heading */}
-          <div className="max-w-[90%] mx-auto text-center px-4">
-            <h1 className="font-display font-bold text-3xl sm:text-5xl md:text-6xl lg:text-7xl leading-tight mb-6 animate-fade-in-up animate-delay-200">
-              Hi, I'm <span className="gradient-text">Babin Joe</span>
-            </h1>
-          </div>
-
+          <h1 className="font-display font-bold text-4xl sm:text-6xl lg:text-7xl mb-6 animate-fade-in-up animate-delay-200">
+            Hi, I'm{' '}
+            <span className="gradient-text">Babin Joe</span>
+          </h1>
 
           {/* Typing Animation */}
           <div className="text-xl sm:text-2xl lg:text-3xl mb-8 h-12 flex items-center justify-center animate-fade-in-up animate-delay-400">
@@ -75,7 +73,7 @@ const Home = () => {
           </div>
 
           {/* Description */}
-          <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto mb-12 px-4 animate-fade-in-up animate-delay-600">
+          <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto mb-12 animate-fade-in-up animate-delay-600">
             Passionate about creating innovative solutions through code. Specializing in 
             Software Development, AI/ML applications, Full-Stack Development and building robust offline-first applications.
           </p>
