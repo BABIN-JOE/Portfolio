@@ -8,7 +8,7 @@ const Certificates = () => {
     {
       id: 106,
       title: "Entrepreneurship IGNITE 3.4",
-      issuer: "Wadhwaani Foundation Global (WFG)",
+      issuer: "Wadhwani Foundation Global (WFG)",
       date: "2025",
       description: "Entrepreneurship IGNITE 3.4 certificate from WFG.",
       logo: "�",
@@ -23,7 +23,7 @@ const Certificates = () => {
       description: "Certificate for successful completion of NPTEL Management course.",
       logo: "📚",
       credentialUrl: "https://internalapp.nptel.ac.in/NOC/NOC25/SEM1/Ecertificates/110/noc25-mg07/Course/NPTEL25MG07S114320545904675933.pdf",
-      skills: ["Management", "NPTEL", "Course Completion"]
+      skills: ["Management", "AI", "Product Management"]
     },
     // 2. Udemy
     {
@@ -34,7 +34,7 @@ const Certificates = () => {
       description: "Certificate for completing a Udemy course in Python Programming.",
       logo: "💻",
       credentialUrl: "http://ude.my/UC-3f9ebf2f-816d-40b1-9f16-363c179adefa",
-      skills: ["Python Programming", "Udemy", "Programming"]
+      skills: ["Python Programming", "Problem Solving", "Programming"]
     },
     
     // 4. All HackerRank
@@ -46,7 +46,7 @@ const Certificates = () => {
       description: "Advanced SQL skills certification from HackerRank.",
       logo: "🐞",
       credentialUrl: "https://www.hackerrank.com/certificates/4092c3db66dc",
-      skills: ["SQL", "Advanced", "Database"]
+      skills: ["SQL", "DBMS", "Database"]
     },
     {
       id: 202,
@@ -56,7 +56,7 @@ const Certificates = () => {
       description: "Basic SQL skills certification from HackerRank.",
       logo: "🐞",
       credentialUrl: "https://www.hackerrank.com/certificates/a0946ea5df64",
-      skills: ["SQL", "Basic", "Database"]
+      skills: ["SQL", "DBMS", "Database"]
     },
     {
       id: 203,
@@ -66,7 +66,7 @@ const Certificates = () => {
       description: "Intermediate SQL skills certification from HackerRank.",
       logo: "🐞",
       credentialUrl: "https://www.hackerrank.com/certificates/63cff512af72",
-      skills: ["SQL", "Intermediate", "Database"]
+      skills: ["SQL", "DBMS", "Database"]
     },
     {
       id: 204,
@@ -76,7 +76,7 @@ const Certificates = () => {
       description: "Basic problem solving skills certification from HackerRank.",
       logo: "🐞",
       credentialUrl: "https://www.hackerrank.com/certificates/72d2273818da",
-      skills: ["Problem Solving", "Basic", "Algorithms"]
+      skills: ["Problem Solving", "Programming", "Algorithms"]
     },
     {
       id: 205,
@@ -86,7 +86,7 @@ const Certificates = () => {
       description: "Intermediate problem solving skills certification from HackerRank.",
       logo: "🐞",
       credentialUrl: "https://www.hackerrank.com/certificates/96999b96e435",
-      skills: ["Problem Solving", "Intermediate", "Algorithms"]
+      skills: ["Problem Solving", "Programming", "Algorithms"]
     },
     {
       id: 206,
@@ -96,7 +96,7 @@ const Certificates = () => {
       description: "Basic Python skills certification from HackerRank.",
       logo: "🐞",
       credentialUrl: "https://www.hackerrank.com/certificates/99f826182bb5",
-      skills: ["Python", "Basic", "Programming"]
+      skills: ["Python", "Problem Solving", "Programming"]
     },
     {
       id: 207,
@@ -106,7 +106,7 @@ const Certificates = () => {
       description: "Software Engineer certification from HackerRank.",
       logo: "🐞",
       credentialUrl: "https://www.hackerrank.com/certificates/f3f29f6c12cd",
-      skills: ["Software Engineering", "Programming"]
+      skills: ["Software Engineering", "Programming", "Problem Solving"]
     },
     {
       id: 208,
@@ -116,7 +116,7 @@ const Certificates = () => {
       description: "Software Engineer Intern certification from HackerRank.",
       logo: "�",
       credentialUrl: "https://www.hackerrank.com/certificates/a729bf6d923b",
-      skills: ["Software Engineering", "Internship", "Programming"]
+      skills: ["Software Engineering", "Problem Solving", "Programming"]
     },
     {
       id: 103,
@@ -126,7 +126,7 @@ const Certificates = () => {
       description: "Basic Java skills certification from HackerRank.",
       logo: "🐞",
       credentialUrl: "https://www.hackerrank.com/certificates/259ef1278df7",
-      skills: ["Java", "Basic", "Programming"]
+      skills: ["Java", "Problem Solving", "Programming"]
     },
     // 5. All MathWorks (MATLAB)
     {
@@ -157,7 +157,7 @@ const Certificates = () => {
       description: "Certificate for Deep Learning with MATLAB.",
       logo: "🧠",
       credentialUrl: "https://matlabacademy.mathworks.com/progress/share/certificate.html?id=9062d202-64fe-43d5-b7a8-e52e3f3c0d94&",
-      skills: ["Deep Learning", "MATLAB"]
+      skills: ["Deep Learning", "MATLAB", "Python"]
     },
     {
       id: 304,
@@ -167,7 +167,7 @@ const Certificates = () => {
       description: "Certificate for Machine Learning with MATLAB.",
       logo: "🤖",
       credentialUrl: "https://matlabacademy.mathworks.com/progress/share/certificate.html?id=99e0b4ce-02ee-40e0-ae1c-b58e589007ab&",
-      skills: ["Machine Learning", "MATLAB"]
+      skills: ["Machine Learning", "MATLAB", "Python"]
     },
     {
       id: 309,
@@ -217,7 +217,7 @@ const Certificates = () => {
       description: "Certificate for completing MATLAB Onramp course.",
       logo: "🚦",
       credentialUrl: "https://matlabacademy.mathworks.com/progress/share/certificate.html?id=59fa30d6-d214-4713-a453-055c3137999f&",
-      skills: ["MATLAB", "Onramp"]
+      skills: ["MATLAB", "Onramp", "Programming"]
     },
     {
       id: 308,
@@ -227,7 +227,7 @@ const Certificates = () => {
       description: "Certificate for MATLAB Programming Techniques.",
       logo: "💡",
       credentialUrl: "https://matlabacademy.mathworks.com/progress/share/certificate.html?id=49141e0f-a2d4-42fb-ab05-0a6d030b1a9f&",
-      skills: ["MATLAB", "Programming Techniques"]
+      skills: ["MATLAB", "Programming Techniques", "Programming"]
     },
     {
       id: 301,
