@@ -1,4 +1,3 @@
-
 # 💼 Babin Joe's Developer Portfolio
 
 This is a sleek and interactive developer portfolio built with **React**, **TypeScript**, **Tailwind CSS**, and **Vite**. It showcases Babin Joe’s work, including projects, certificates, education, and resume — along with a dark/light mode toggle and animated, responsive UI.
@@ -64,9 +63,10 @@ Portfolio/
 │   ├── components/ui/ (ShadCN UI components)
 │   ├── App.tsx
 │   └── main.tsx
+├── api/
+│   └── contact.js         # Contact form backend (Node.js)
 ├── vercel.json
 ├── package.json
-├── index.cjs (contact form backend)
 ├── tailwind.config.ts
 └── tsconfig.json
 ```
@@ -94,17 +94,18 @@ npm install
 npm run dev
 ```
 
-4. **Start backend (contact API)**
+4. **Start backend (contact API) locally**
 
 ```bash
-node index.cjs
+cd api
+node contact.js
 ```
 
 ---
 
 ## 🧑‍💻 Deployment (Vercel)
 
-The project is deployed using Vercel. It includes a [Serverless Function](https://vercel.com/docs/functions) (`index.cjs`) to handle contact form submissions securely and efficiently.
+The project is deployed using Vercel. It includes a [Serverless Function](https://vercel.com/docs/functions) (`api/contact.js`) to handle contact form submissions securely and efficiently.
 
 To deploy manually:
 
@@ -122,15 +123,19 @@ vercel dev
 
 ## 📫 Contact Form Backend
 
-The backend is a Vercel serverless function defined in `index.cjs`. It uses **nodemailer** to send emails to your address when a user submits the contact form.
+The backend is a Vercel serverless function defined in `api/contact.js`. It uses **nodemailer** to send emails to your address when a user submits the contact form.
 
-Make sure to set these environment variables in Vercel or `.env.local`:
+Make sure to set these environment variables in Vercel or in a `.env` file inside the `api/` directory:
 
 ```env
-EMAIL_USER=your_email@example.com
-EMAIL_PASS=your_app_password
-EMAIL_TO=your_destination_email@example.com
+FROM_EMAIL=your_email@example.com
+FROM_PASS=your_email_password
+TO_EMAIL=recipient_email@example.com
 ```
+
+> **Note:**  
+> The environment variable names must match those above.  
+> The `.env` file is already gitignored for security.
 
 ---
 
@@ -164,4 +169,4 @@ This project is licensed under the **MIT License**. Feel free to fork and custom
 
 ---
 
-> Built with ❤️ by Babin Joe
+> Built with ❤️ by Babin Joe  
