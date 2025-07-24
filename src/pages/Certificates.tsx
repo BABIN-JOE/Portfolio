@@ -13,7 +13,7 @@ const Certificates = () => {
       description: "Entrepreneurship IGNITE 3.4 certificate from WFG.",
       logo: "�",
       credentialUrl: "https://web.certificate.wfglobal.org/en/certificate?certificateId=67fdf5ebeeacc2785e22e106",
-      skills: ["Entrepreneurship", "IGNITE", "WFG"]
+      skills: ["Entrepreneurship", "IGNITE", "Venture Creation"]
     },
     {
       id: 101,
@@ -137,7 +137,7 @@ const Certificates = () => {
       description: "Certificate for completing Computer Vision Onramp course.",
       logo: "👁️",
       credentialUrl: "https://matlabacademy.mathworks.com/progress/share/certificate.html?id=413452cf-3d62-4917-88d6-a858cb44fd1c&",
-      skills: ["Computer Vision", "MATLAB", "Onramp"]
+      skills: ["Computer Vision", "MATLAB", "Programming"]
     },
     {
       id: 302,
@@ -147,7 +147,7 @@ const Certificates = () => {
       description: "Certificate for completing Deep Learning Onramp course.",
       logo: "🧠",
       credentialUrl: "https://matlabacademy.mathworks.com/progress/share/certificate.html?id=84c54e50-c383-49f2-a138-4d9e3387b1cb&",
-      skills: ["Deep Learning", "MATLAB", "Onramp"]
+      skills: ["Deep Learning", "MATLAB", "Programming"]
     },
     {
       id: 303,
@@ -187,7 +187,7 @@ const Certificates = () => {
       description: "Certificate for completing Machine Learning Onramp course.",
       logo: "🤖",
       credentialUrl: "https://matlabacademy.mathworks.com/progress/share/certificate.html?id=0744208e-e69e-45d5-beb3-0d9b0a81d7cf&",
-      skills: ["Machine Learning", "MATLAB", "Onramp"]
+      skills: ["Machine Learning", "MATLAB", "Programming"]
     },
     {
       id: 311,
@@ -197,7 +197,7 @@ const Certificates = () => {
       description: "Certificate for completing Object-Oriented Programming Onramp course.",
       logo: "🧩",
       credentialUrl: "https://matlabacademy.mathworks.com/progress/share/certificate.html?id=a2a773d2-ae78-4974-9824-b006eb7ef567&",
-      skills: ["Object-Oriented Programming", "MATLAB", "Onramp"]
+      skills: ["Object-Oriented Programming", "MATLAB", "Programming"]
     },
     {
       id: 312,
@@ -207,7 +207,7 @@ const Certificates = () => {
       description: "Certificate for completing Statistics Onramp course.",
       logo: "📈",
       credentialUrl: "https://matlabacademy.mathworks.com/progress/share/certificate.html?id=8ccf068f-8144-4e28-a6e4-6b8e5586bdb6&",
-      skills: ["Statistics", "MATLAB", "Onramp"]
+      skills: ["Statistics", "MATLAB", "Programming"]
     },
     {
       id: 313,
@@ -237,7 +237,7 @@ const Certificates = () => {
       description: "Certificate for MATLAB Fundamentals.",
       logo: "�",
       credentialUrl: "https://matlabacademy.mathworks.com/progress/share/certificate.html?id=35b7488d-fe60-4d4a-ab89-5c43b030a098&",
-      skills: ["MATLAB", "Fundamentals"]
+      skills: ["MATLAB", "Fundamentals", "Programming"]
     },
     // 6. All Cognitive Class (IBM)
     {
@@ -248,7 +248,7 @@ const Certificates = () => {
       description: "Certificate for Accelerating Deep Learning with GPUs.",
       logo: "🖥️",
       credentialUrl: "https://courses.cognitiveclass.ai/certificates/541477afc9fa435982d1e72665b0c039",
-      skills: ["Deep Learning", "GPUs", "Cognitive Class"]
+      skills: ["Deep Learning", "GPUs", "Programming"]
     },
     {
       id: 108,
@@ -258,7 +258,7 @@ const Certificates = () => {
       description: "Certificate for Data Analysis with Python.",
       logo: "📊",
       credentialUrl: "https://courses.cognitiveclass.ai/certificates/b253cd4b535b4122966c7b1b6a2a325b",
-      skills: ["Data Analysis", "Python", "Cognitive Class"]
+      skills: ["Data Analysis", "Python", "Programming"]
     },
     {
       id: 109,
@@ -268,7 +268,7 @@ const Certificates = () => {
       description: "Certificate for Deep Learning with TensorFlow.",
       logo: "🧠",
       credentialUrl: "https://courses.cognitiveclass.ai/certificates/13218e3f6c714bfda62a15cfff968096",
-      skills: ["Deep Learning", "TensorFlow", "Cognitive Class"]
+      skills: ["Deep Learning", "TensorFlow", "Programming"]
     },
     {
       id: 110,
@@ -278,7 +278,7 @@ const Certificates = () => {
       description: "Certificate for Machine Learning - Dimensionality Reduction.",
       logo: "📉",
       credentialUrl: "https://courses.cognitiveclass.ai/certificates/b8c11cb0caf14b61937631db1f63df51",
-      skills: ["Machine Learning", "Dimensionality Reduction", "Cognitive Class"]
+      skills: ["Machine Learning", "Dimensionality Reduction", "Programming"]
     },
     {
       id: 111,
@@ -288,7 +288,7 @@ const Certificates = () => {
       description: "Certificate for R for Data Science.",
       logo: "📈",
       credentialUrl: "https://courses.cognitiveclass.ai/certificates/e4070d14ef034638a54a3a6729d39b46",
-      skills: ["R", "Data Science", "Cognitive Class"]
+      skills: ["R", "Data Science", "Programming"]
     },
     // 3. Digital 101 Journey (public/certificates/Digital 101 Journey Certificate.pdf)
     {
@@ -310,7 +310,7 @@ const Certificates = () => {
       description: "Certificate for completing 3D Printing workshop.",
       logo: "�️",
       credentialUrl: "/certificates/Babin Joe 3D Printing Certificate.pdf",
-      skills: ["3D Printing", "Workshop"]
+      skills: ["3D Printing", "Solidworks", "Makerbot"]
     },
     {
       id: 403,
@@ -320,7 +320,7 @@ const Certificates = () => {
       description: "Certificate for completing 30 days AI Workshop.",
       logo: "🤖",
       credentialUrl: "/certificates/Novitech 30 days AI Workshop Certificate.pdf",
-      skills: ["AI", "Workshop"]
+      skills: ["AI", "Workshop", "Programming"]
     },
     {
       id: 404,
@@ -330,7 +330,7 @@ const Certificates = () => {
       description: "Certificate for completing Drone Workshop.",
       logo: "�",
       credentialUrl: "/certificates/AIROBO Infinity Workshop Certificate.jpeg",
-      skills: ["Drone", "Workshop"]
+      skills: ["Drone", "Workshop", "IOT"]
     },
     
   ];
