@@ -231,7 +231,7 @@ const Certificates = () => {
     },
     {
       id: 301,
-      title: "Computer Vision Onramp",
+      title: "MATLAB Fundamentals",
       issuer: "MathWorks",
       date: "2025",
       description: "Certificate for MATLAB Fundamentals.",
