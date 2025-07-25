@@ -4,6 +4,16 @@ import { Link } from 'react-router-dom';
 
 const Certificates = () => {
   const certificates = [
+    {
+      id: 101,
+      title: "Salesforce Launchpad Program",
+      issuer: "PwC",
+      date: "2025",
+      description: "Salesforce course completion Certification.",
+      logo: "�",
+      credentialUrl: "public\pwc badges\PwC Launchpad.pdf",
+      skills: ["Salesforce", "RDBMS", "Java"]
+    },
     // 1. Entrepreneurship IGNITE 3.4
     {
       id: 106,
