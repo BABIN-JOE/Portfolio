@@ -6,7 +6,7 @@ This is a sleek and interactive developer portfolio built with **React**, **Type
 
 ## 🔗 Live Site
 
-➡️ [https://babin-joe-portfolio.vercel.app/](https://babin-joe-portfolio.vercel.app/)
+➡️ [https://babin-joe-portfolio.vercel.app/](https://babin-joe.vercel.app/)
 
 ---
 
