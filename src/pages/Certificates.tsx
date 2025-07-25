@@ -11,7 +11,7 @@ const Certificates = () => {
       date: "2025",
       description: "Salesforce course completion Certification.",
       logo: "�",
-      credentialUrl: "public\pwc badges\PwC Launchpad.pdf",
+      credentialUrl: "/public\pwc badges\PwC Launchpad.pdf",
       skills: ["Salesforce", "RDBMS", "Java"]
     },
     // 1. Entrepreneurship IGNITE 3.4
