@@ -2,7 +2,7 @@
 
 This is a sleek and interactive developer portfolio built with **React**, **TypeScript**, **Tailwind CSS**, and **Vite**. It showcases Babin Joe’s work, including projects, certificates, education, and resume — along with a dark/light mode toggle and animated, responsive UI.
 
-![Banner](public/portfolio-banner.png) <!-- You can add a banner image to your public folder and update this path -->
+![Banner](public/portfolio-banner.png)
 
 ## 🔗 Live Site
 
@@ -68,7 +68,7 @@ Portfolio/
 ├── vercel.json
 ├── package.json
 ├── tailwind.config.ts
-└── tsconfig.json
+├── tsconfig.json
 ```
 
 ---
@@ -169,4 +169,4 @@ This project is licensed under the **MIT License**. Feel free to fork and custom
 
 ---
 
-> Built with ❤️ by Babin Joe  
+> Built with ❤️ by Babin Joe
