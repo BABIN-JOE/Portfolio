@@ -1,6 +1,6 @@
 # 💼 Babin Joe's Developer Portfolio
 
-This is a sleek and interactive developer portfolio built with **React**, **TypeScript**, **Tailwind CSS**, and **Vite**. It showcases Babin Joe’s work, including projects, certificates, education, and resume — along with a dark/light mode toggle and animated, responsive UI.
+This is a sleek and interactive developer portfolio built with **React**, **TypeScript**, **Tailwind CSS**, and **Vite**. It showcases Babin Joe’s summary, work, including projects, certificates, education, resume and contact details — along with a dark/light mode toggle and animated, responsive UI.
 
 ![Banner](public/portfolio-banner.png)
 
