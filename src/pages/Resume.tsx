@@ -120,8 +120,8 @@ const Resume = () => {
                 <p className="text-muted-foreground mb-2">Offline AI application that extracts and summarizes PDF and scanned document content using OCR, NLP, and layout analysis. Provides structured overview, document categorization, and key points without internet access.</p>
               </div>
               <div>
-                <h4 className="font-semibold text-lg mb-1">Skillyzer</h4>
-                <p className="text-muted-foreground mb-2">Web application for recruiters to evaluate coding and resume skills through LeetCode, HackerRank, and HackerEarth integrations. Features ATS-based scores, role-based authorization, and progress tracking. Developed using Java, Spring Boot, MySQL, HTML, CSS, and JavaScript.</p>
+                <h4 className="font-semibold text-lg mb-1">SonicScape</h4>
+                <p className="text-muted-foreground mb-2">SonicScape is a mobile application designed to help visually impaired individuals navigate safely by detecting and interpreting surrounding sounds in real-time. It provides audio or vibrational alerts based on environmental noise, enabling on-the-go awareness without relying on vision.</p>
               </div>
             </div>
           </section>
