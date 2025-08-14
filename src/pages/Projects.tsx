@@ -10,7 +10,7 @@ const Projects = () => {
       title: "Fluent Edge",
       description: "AI-powered web application using Flask and NLP tools that converts live speech to text, restores punctuation, detects grammatical errors, and analyzes accuracy percentage.",
       image: "📄",
-      technologies: ["Flask", "NLP", "Speech Recognition", "Python"],
+      technologies: ["Flask", "NLP", "Speech Recognition", "Python","NLP"],
       githubUrl: "https://github.com/BABIN-JOE/FLUENT-EDGE",
       liveUrl: "#",
       featured: true
@@ -27,10 +27,10 @@ const Projects = () => {
     },
     {
       id: 3,
-      title: "Skillyzer",
-      description: "Web application for recruiters to evaluate coding and resume skills through LeetCode, HackerRank, and HackerEarth integrations. Features ATS-based scores, role-based authorization, and progress tracking. Developed using Java, Spring Boot, MySQL, HTML, CSS, and JavaScript.",
+      title: "Healynx",
+      description: "Healynx is an AI-powered clinical platform that uses a patient's medical history and real-time biometric data to create personalized recovery plans and predict health risks. It bridges the gap between hospital treatment and home care by providing clinicians with a decision-support tool and patients with a mobile app that offers real-time feedback and oversight.",
       image: "🧑‍💻",
-      technologies: ["Java", "Spring Boot", "MySQL", "HTML", "CSS", "JavaScript"],
+      technologies: ["Node.js","Python","HTML","CSS","ML"],
       githubUrl: "https://github.com/BABIN-JOE/Skillyzer",
       liveUrl: "#",
       featured: false
