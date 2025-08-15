@@ -3,38 +3,6 @@ import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
 
 const Resume = () => {
-  const experience = [
-    {
-      title: "Senior Software Developer",
-      company: "TechCorp Solutions",
-      duration: "2023 - Present",
-      type: "Full-time",
-      description: "Leading development of AI-powered document processing systems and mentoring junior developers."
-    },
-    {
-      title: "Full Stack Developer",
-      company: "InnovateLabs",
-      duration: "2022 - 2023",
-      type: "Full-time", 
-      description: "Developed scalable web applications using React, Node.js, and cloud technologies."
-    },
-    {
-      title: "Software Development Intern",
-      company: "StartupTech",
-      duration: "2022",
-      type: "Internship",
-      description: "Built responsive web interfaces and integrated APIs for mobile applications."
-    }
-  ];
-
-  const skills = {
-    "Programming Languages": ["JavaScript", "TypeScript", "Python", "Java", "C++"],
-    "Frontend Technologies": ["React", "Next.js", "Vue.js", "Tailwind CSS", "SCSS"],
-    "Backend Technologies": ["Node.js", "Express", "Django", "FastAPI", "GraphQL"],
-    "Databases": ["PostgreSQL", "MongoDB", "Redis", "MySQL", "SQLite"],
-    "Cloud & DevOps": ["AWS", "Docker", "Kubernetes", "CI/CD", "Terraform"],
-    "AI/ML": ["TensorFlow", "PyTorch", "OpenCV", "NLP", "Scikit-learn"]
-  };
 
   return (
     <div className="min-h-screen pt-24 pb-20 px-4 sm:px-6 lg:px-8">
@@ -120,8 +88,8 @@ const Resume = () => {
                 <p className="text-muted-foreground mb-2">Offline AI application that extracts and summarizes PDF and scanned document content using OCR, NLP, and layout analysis. Provides structured overview, document categorization, and key points without internet access.</p>
               </div>
               <div>
-                <h4 className="font-semibold text-lg mb-1">SonicScape</h4>
-                <p className="text-muted-foreground mb-2">SonicScape is a mobile application designed to help visually impaired individuals navigate safely by detecting and interpreting surrounding sounds in real-time. It provides audio or vibrational alerts based on environmental noise, enabling on-the-go awareness without relying on vision.</p>
+                <h4 className="font-semibold text-lg mb-1">Healynx</h4>
+                <p className="text-muted-foreground mb-2">Healynx is an AI-powered clinical platform that uses a patient's medical history to create personalized recovery plans and predict health risks. It also stores the patient’s entire lifetime medical histories, for emergency uses and these histories can be accessed by Hospitals and Doctors.</p>
               </div>
             </div>
           </section>
