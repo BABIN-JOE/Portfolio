@@ -16,13 +16,13 @@ const Home = () => {
   const technologies = [
   { name: "Python", logo: "🐍" },
   { name: "Java", logo: "☕" },
-  { name: "SQL", logo: "�️" },
+  { name: "SQL", logo: "🧱" },
   { name: "AI", logo: "🧠" },
-  { name: "ML", logo: "�" },
+  { name: "ML", logo: "👨🏻‍💻" },
   { name: "NLP", logo: "🗣️" },
-  { name: "CV", logo: "�️" },
+  { name: "CV", logo: "👁️" },
   { name: "Robotics", logo: "🤖" },
-  { name: "Drone", logo: "�" },
+  { name: "Drone", logo: "🛩️" },
   { name: "HTML", logo: "🌐" },
   { name: "CSS", logo: "🎨" }
 ];
