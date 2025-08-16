@@ -10,7 +10,7 @@ const Certificates = () => {
       issuer: "PwC",
       date: "2025",
       description: "Salesforce course completion Certification.",
-      logo: "�",
+      logo: "🧑‍🎓",
       credentialUrl: "/certificates/PwC Launchpad.pdf",
       skills: ["Salesforce", "RDBMS", "Java"]
     },
@@ -21,7 +21,7 @@ const Certificates = () => {
       issuer: "Wadhwani Foundation Global (WFG)",
       date: "2025",
       description: "Entrepreneurship IGNITE 3.4 certificate from WFG.",
-      logo: "�",
+      logo: "🏢",
       credentialUrl: "https://web.certificate.wfglobal.org/en/certificate?certificateId=67fdf5ebeeacc2785e22e106",
       skills: ["Entrepreneurship", "IGNITE", "Venture Creation"]
     },
@@ -42,7 +42,7 @@ const Certificates = () => {
       issuer: "Udemy",
       date: "2025",
       description: "Certificate for completing a Udemy course in Python Programming.",
-      logo: "💻",
+      logo: "🐍",
       credentialUrl: "http://ude.my/UC-3f9ebf2f-816d-40b1-9f16-363c179adefa",
       skills: ["Python Programming", "Problem Solving", "Programming"]
     },
@@ -54,7 +54,7 @@ const Certificates = () => {
       issuer: "HackerRank",
       date: "2025",
       description: "Advanced SQL skills certification from HackerRank.",
-      logo: "🐞",
+      logo: "🧱",
       credentialUrl: "https://www.hackerrank.com/certificates/4092c3db66dc",
       skills: ["SQL", "DBMS", "Database"]
     },
@@ -64,7 +64,7 @@ const Certificates = () => {
       issuer: "HackerRank",
       date: "2025",
       description: "Basic SQL skills certification from HackerRank.",
-      logo: "🐞",
+      logo: "🧱",
       credentialUrl: "https://www.hackerrank.com/certificates/a0946ea5df64",
       skills: ["SQL", "DBMS", "Database"]
     },
@@ -74,7 +74,7 @@ const Certificates = () => {
       issuer: "HackerRank",
       date: "2025",
       description: "Intermediate SQL skills certification from HackerRank.",
-      logo: "🐞",
+      logo: "🧱",
       credentialUrl: "https://www.hackerrank.com/certificates/63cff512af72",
       skills: ["SQL", "DBMS", "Database"]
     },
@@ -84,7 +84,7 @@ const Certificates = () => {
       issuer: "HackerRank",
       date: "2025",
       description: "Basic problem solving skills certification from HackerRank.",
-      logo: "🐞",
+      logo: "💡",
       credentialUrl: "https://www.hackerrank.com/certificates/72d2273818da",
       skills: ["Problem Solving", "Programming", "Algorithms"]
     },
@@ -94,7 +94,7 @@ const Certificates = () => {
       issuer: "HackerRank",
       date: "2025",
       description: "Intermediate problem solving skills certification from HackerRank.",
-      logo: "🐞",
+      logo: "💡",
       credentialUrl: "https://www.hackerrank.com/certificates/96999b96e435",
       skills: ["Problem Solving", "Programming", "Algorithms"]
     },
@@ -104,7 +104,7 @@ const Certificates = () => {
       issuer: "HackerRank",
       date: "2025",
       description: "Basic Python skills certification from HackerRank.",
-      logo: "🐞",
+      logo: "🐍",
       credentialUrl: "https://www.hackerrank.com/certificates/99f826182bb5",
       skills: ["Python", "Problem Solving", "Programming"]
     },
@@ -114,7 +114,7 @@ const Certificates = () => {
       issuer: "HackerRank",
       date: "2025",
       description: "Software Engineer certification from HackerRank.",
-      logo: "🐞",
+      logo: "⚙️",
       credentialUrl: "https://www.hackerrank.com/certificates/f3f29f6c12cd",
       skills: ["Software Engineering", "Programming", "Problem Solving"]
     },
@@ -124,7 +124,7 @@ const Certificates = () => {
       issuer: "HackerRank",
       date: "2025",
       description: "Software Engineer Intern certification from HackerRank.",
-      logo: "�",
+      logo: "⚙️",
       credentialUrl: "https://www.hackerrank.com/certificates/a729bf6d923b",
       skills: ["Software Engineering", "Problem Solving", "Programming"]
     },
@@ -134,7 +134,7 @@ const Certificates = () => {
       issuer: "HackerRank",
       date: "2025",
       description: "Basic Java skills certification from HackerRank.",
-      logo: "🐞",
+      logo: "☕",
       credentialUrl: "https://www.hackerrank.com/certificates/259ef1278df7",
       skills: ["Java", "Problem Solving", "Programming"]
     },
@@ -225,7 +225,7 @@ const Certificates = () => {
       issuer: "MathWorks",
       date: "2025",
       description: "Certificate for completing MATLAB Onramp course.",
-      logo: "🚦",
+      logo: "💭",
       credentialUrl: "https://matlabacademy.mathworks.com/progress/share/certificate.html?id=59fa30d6-d214-4713-a453-055c3137999f&",
       skills: ["MATLAB", "Onramp", "Programming"]
     },
@@ -245,7 +245,7 @@ const Certificates = () => {
       issuer: "MathWorks",
       date: "2025",
       description: "Certificate for MATLAB Fundamentals.",
-      logo: "�",
+      logo: "💭",
       credentialUrl: "https://matlabacademy.mathworks.com/progress/share/certificate.html?id=35b7488d-fe60-4d4a-ab89-5c43b030a098&",
       skills: ["MATLAB", "Fundamentals", "Programming"]
     },
@@ -318,7 +318,7 @@ const Certificates = () => {
       issuer: "Makerspace, SCAS",
       date: "2022",
       description: "Certificate for completing 3D Printing workshop.",
-      logo: "�️",
+      logo: "🖨️",
       credentialUrl: "/certificates/Babin Joe 3D Printing Certificate.pdf",
       skills: ["3D Printing", "Solidworks", "Makerbot"]
     },
@@ -338,7 +338,7 @@ const Certificates = () => {
       issuer: "AIROBO INFINITY",
       date: "2024",
       description: "Certificate for completing Drone Workshop.",
-      logo: "�",
+      logo: "🛩️",
       credentialUrl: "/certificates/AIROBO Infinity Workshop Certificate.jpeg",
       skills: ["Drone", "Workshop", "IOT"]
     },
