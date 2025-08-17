@@ -9,13 +9,13 @@ const Education = () => {
       institution: "Sathyabama Institute of Science and Technology",
       location: "Chennai, India",
       duration: "2022 - 2026",
-      grade: "8.5 CGPA",
+      grade: "8.4 CGPA",
       description: "Focused on Artificial Intelligence and Robotics, with hands-on experience in building intelligent systems, autonomous robots, and real-world applications. Developed strong foundations in computer science, programming, and engineering principles, while leading and collaborating on innovative projects and technical events.",
       achievements: [
         "Technical Team Head @ SIST Experiment Hub",
         "Project Lead",
         "Event Coordinator and Organizer",
-        "Intern @ few companies"
+        "Open Source Contributor"
       ],
       courses: [
         "Data Structures and Algorithm",
@@ -49,7 +49,7 @@ const Education = () => {
         "Physics",
         "Chemistry", 
         "Mathematics",
-        "Computer Science",
+        "Biology",
         "English"
       ]
     }
