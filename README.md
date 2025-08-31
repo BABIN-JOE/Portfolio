@@ -146,7 +146,8 @@ TO_EMAIL=recipient_email@example.com
 - [x] Responsive mobile nav bar  
 - [ ] Add animations using Framer Motion  
 - [ ] Project filtering or tag system  
-- [ ] Multilingual support  
+- [ ] Multilingual support
+- [ ] Light mode Fading issue
 
 ---
 
