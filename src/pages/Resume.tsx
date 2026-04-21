@@ -120,6 +120,14 @@ const Resume = () => {
                 </ul>
               </div>
               <div>
+                <h4 className="font-semibold text-lg mb-2">Tools and Platforms</h4>
+                <ul className="list-disc space-y-1 pl-5 text-muted-foreground">
+                  <li>Git, GitHub, VSCode</li>
+                  <li>CAD, SolidWorks, Robodk, Canva</li>
+                  <li>Arduino IDE, Tinkercad</li>
+                </ul>
+              </div>
+              <div>
                 <h4 className="font-semibold text-lg mb-2">Core Competencies</h4>
                 <ul className="list-disc space-y-1 pl-5 text-muted-foreground">
                   <li>Problem Solving</li>
@@ -130,14 +138,6 @@ const Resume = () => {
                   <li>ML</li>
                   <li>NLP</li>
                   <li>3D Technology and Printing</li>
-                </ul>
-              </div>
-              <div>
-                <h4 className="font-semibold text-lg mb-2">Tools and Platforms</h4>
-                <ul className="list-disc space-y-1 pl-5 text-muted-foreground">
-                  <li>Git, GitHub, VSCode</li>
-                  <li>CAD, SolidWorks, Robodk, Canva</li>
-                  <li>Arduino IDE, Tinkercad</li>
                 </ul>
               </div>
               <div>
