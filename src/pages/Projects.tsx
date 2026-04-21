@@ -7,6 +7,16 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
+      title: "Healynx",
+      description: "Healynx is a privacy-first healthcare platform designed to manage electronic health records using encryption, role-based access control, and AI-driven summarization, enabling secure data sharing and efficient, informed clinical decision-making.",
+      icon: HeartPulse,
+      technologies: ["Python (FastAPI)", "React", "PostgreSQL", "AI"],
+      githubUrl: "https://github.com/BABIN-JOE/Healynx",
+      liveUrl: "https://healynx-med.vercel.app/",
+      featured: true
+    },
+    {
+      id: 2,
       title: "Fluent Edge",
       description: "AI-powered web application using Flask and NLP tools that converts live speech to text, restores punctuation, detects grammatical errors, and analyzes accuracy percentage.",
       icon: Mic2,
@@ -16,7 +26,7 @@ const Projects = () => {
       featured: true
     },
     {
-      id: 2,
+      id: 3,
       title: "NeuroDoc",
       description: "AI application that extracts and summarizes PDF and scanned document content using OCR, NLP, and layout analysis. Provides structured overview, document categorization, and key points without internet access.",
       icon: FileText,
@@ -24,16 +34,6 @@ const Projects = () => {
       githubUrl: "https://github.com/BABIN-JOE/NeuroDoc",
       liveUrl: "#",
       featured: true
-    },
-    {
-      id: 3,
-      title: "Healynx",
-      description: "Healynx is a privacy-first healthcare platform designed to manage electronic health records using encryption, role-based access control, and AI-driven summarization, enabling secure data sharing and efficient, informed clinical decision-making.",
-      icon: HeartPulse,
-      technologies: ["Python (FastAPI)", "React", "PostgreSQL", "AI"],
-      githubUrl: "https://github.com/BABIN-JOE/Healynx",
-      liveUrl: "https://healynx-med.vercel.app/",
-      featured: false
     },
     {
       id: 4,
