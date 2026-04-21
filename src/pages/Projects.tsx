@@ -40,7 +40,7 @@ const Projects = () => {
       title: "Attendance Management System",
       description: "A comprehensive system for tracking and managing student attendance, featuring user authentication, attendance reports, and easy integration for educational institutions. Built with Java and MySQL.",
       icon: ClipboardList,
-      technologies: ["Java", "MySQL", "Swing"],
+      technologies: ["HTML", "CSS", "JS"],
       githubUrl: "https://github.com/BABIN-JOE/Attendance-Management-System",
       liveUrl: "#",
       featured: false
@@ -50,7 +50,7 @@ const Projects = () => {
       title: "Pharmacy Management System",
       description: "A desktop application for managing pharmacy inventory, sales, and billing. Includes modules for medicine stock, customer management, and transaction history. Developed using Java and MySQL.",
       icon: Pill,
-      technologies: ["Java", "MySQL", "Swing"],
+      technologies: ["Python", "Tkinter"],
       githubUrl: "https://github.com/BABIN-JOE/Pharmacy-Management-System",
       liveUrl: "#",
       featured: false
