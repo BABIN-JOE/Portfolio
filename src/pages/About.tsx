@@ -40,7 +40,7 @@ const About = () => {
                 From inquisitive clicks to meaningful code, my technological journey has been an ever-evolving ride driven by creativity, curiosity, and determination.
               </p>
               <p>
-                It all began with an intense interest in how things work. I was not merely using software; I wanted to know the reasoning behind it. This curiosity took me through studying Computer Science with specialism in Cyber Security, where I developed a solid base in both developing and defending computer systems.
+                It all began with an intense interest in how things work. I was not merely using software; I wanted to know the reasoning behind it. This curiosity took me through studying Computer Science with specialization in Artificial Intelligence and Robotics, where I developed a solid base in developing softwares and impelemting AI.
               </p>
               <p>
                 My university days weren't all about theory. I applied ideas into real-world problems by working on actual projects, experimenting with AI, intelligent document processing, real-time transcription, and creating offline-first apps. With every project, I honed my skills in Python, JavaScript, Flask, React, and others.

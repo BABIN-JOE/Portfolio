@@ -58,31 +58,6 @@ const Resume = () => {
             </p>
           </section>
 
-          {/* Work Experience */}
-          <section className="mb-12">
-            <h3 className="font-display font-semibold text-xl mb-6 flex items-center">
-              <Briefcase className="h-5 w-5 mr-2 text-primary" />
-              Work Experience
-            </h3>
-            <div className="space-y-6">
-              <div className="border-l-2 border-primary/20 pl-6">
-                <div className="flex flex-wrap items-start justify-between mb-2">
-                  <div>
-                    <h4 className="font-semibold text-lg mb-1">UAV Flight Navigation Engineer Intern</h4>
-                    <p className="text-muted-foreground mb-1">MachCent Aerospace Pvt Ltd.</p>
-                    <span className="text-xs text-muted-foreground">Mar 2025 - Jun 2025</span>
-                  </div>
-                </div>
-                <ul className="list-disc space-y-2 pl-5 text-muted-foreground">
-                  <li>Developed a software application to control the flight controller and integrate RTOS.</li>
-                  <li>Created a navigation control system to track UAV movement and location, and to mark waypoints.</li>
-                  <li>Trained a computer vision model for real-time human movement tracking.</li>
-                  <li>Engaged in integrating and connecting sensors with the flight controller.</li>
-                </ul>
-              </div>
-            </div>
-          </section>
-
           {/* University Projects */}
           <section className="mb-12">
             <h3 className="font-display font-semibold text-xl mb-6 flex items-center">
@@ -91,16 +66,16 @@ const Resume = () => {
             </h3>
             <div className="space-y-6">
               <div>
+                <h4 className="font-semibold text-lg mb-1">Healynx</h4>
+                <p className="text-muted-foreground mb-2">Healynx is a privacy-first healthcare platform designed to manage electronic health records using encryption, role-based access control, and AI-driven summarization, enabling secure data sharing and efficient, informed clinical decision-making.</p>
+              </div>
+              <div>
                 <h4 className="font-semibold text-lg mb-1">Fluent Edge</h4>
                 <p className="text-muted-foreground mb-2">AI-powered web application using Flask and NLP tools that converts live speech to text, restores punctuation, detects grammatical errors, and analyzes accuracy percentage.</p>
               </div>
               <div>
                 <h4 className="font-semibold text-lg mb-1">NeuroDoc</h4>
                 <p className="text-muted-foreground mb-2">Offline AI application that extracts and summarizes PDF and scanned document content using OCR, NLP, and layout analysis. Provides structured overview, document categorization, and key points without internet access.</p>
-              </div>
-              <div>
-                <h4 className="font-semibold text-lg mb-1">Healynx</h4>
-                <p className="text-muted-foreground mb-2">Healynx is an AI-powered clinical platform that uses a patient's medical history to create personalized recovery plans and predict health risks. It also stores the patient's entire lifetime medical histories for emergency use, and these histories can be accessed by hospitals and doctors.</p>
               </div>
             </div>
           </section>
@@ -142,7 +117,6 @@ const Resume = () => {
                 <ul className="list-disc space-y-1 pl-5 text-muted-foreground">
                   <li>Python</li>
                   <li>Java</li>
-                  <li>Robot Programming (VAL, KRL)</li>
                 </ul>
               </div>
               <div>
@@ -152,23 +126,16 @@ const Resume = () => {
                   <li>DSA</li>
                   <li>SQL</li>
                   <li>DBMS</li>
-                  <li>3D Technology and Printing</li>
-                  <li>Product Design</li>
-                </ul>
-              </div>
-              <div>
-                <h4 className="font-semibold text-lg mb-2">Artificial Intelligence</h4>
-                <ul className="list-disc space-y-1 pl-5 text-muted-foreground">
-                  <li>Machine Learning</li>
-                  <li>Deep Learning</li>
+                  <li>AI</li>
+                  <li>ML</li>
                   <li>NLP</li>
-                  <li>CV</li>
+                  <li>3D Technology and Printing</li>
                 </ul>
               </div>
               <div>
                 <h4 className="font-semibold text-lg mb-2">Tools and Platforms</h4>
                 <ul className="list-disc space-y-1 pl-5 text-muted-foreground">
-                  <li>Git, GitHub, VSCode, Eclipse, Postman</li>
+                  <li>Git, GitHub, VSCode</li>
                   <li>CAD, SolidWorks, Robodk, Canva</li>
                   <li>Arduino IDE, Tinkercad</li>
                 </ul>
@@ -180,12 +147,6 @@ const Resume = () => {
                   <li>Adaptability</li>
                   <li>Multi-tasking</li>
                   <li>Teamwork and Collaboration</li>
-                </ul>
-              </div>
-              <div>
-                <h4 className="font-semibold text-lg mb-2">Frameworks and Libraries</h4>
-                <ul className="list-disc space-y-1 pl-5 text-muted-foreground">
-                  <li>Flask, Vosk, Yolo, TensorFlow, PyTorch, Scikit-learn, OpenCV, Numpy, Pandas</li>
                 </ul>
               </div>
               <div>
