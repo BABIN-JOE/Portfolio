@@ -10,7 +10,7 @@ const Education = () => {
       location: "Chennai, India",
       duration: "2022 - 2026",
       grade: "8.4 CGPA",
-      description: "Focused on Artificial Intelligence and Robotics, with hands-on experience in building intelligent systems, autonomous robots, and real-world applications. Developed strong foundations in computer science, programming, and engineering principles, while leading and collaborating on innovative projects and technical events.",
+      description: "Focused on Software Development and Artificial Intelligence, with hands-on experience in building intelligent systems, AI softwares and real-world applications. Developed strong foundations in computer science, programming, and engineering principles, while leading and collaborating on innovative projects and technical events.",
       achievements: [
         "Technical Team Head @ SIST Experiment Hub",
         "Project Lead",
