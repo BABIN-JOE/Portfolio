@@ -38,8 +38,6 @@ const Home = () => {
     { name: "CV", icon: Eye },
     { name: "Robotics", icon: Bot },
     { name: "Drone", icon: Plane },
-    { name: "HTML", icon: Globe2 },
-    { name: "CSS", icon: Palette }
   ];
 
   const socialLinks = [

@@ -2,11 +2,10 @@ import { Code, Heart, Coffee, Zap } from 'lucide-react';
 
 const About = () => {
   const skills = [
-    { category: "Programming Languages", items: ["Python", "Java", "Robot Programming (KRL, VAL)", "HTML (Markup)", "CSS (Styling)"] },
-    { category: "Frameworks & Libraries", items: ["Flask", "Vosk", "Yolo", "Numpy", "Pandas", "Scikit-learn"] },
-    { category: "AI/ML", items: ["TensorFlow", "PyTorch", "OpenCV", "Natural Language Processing"] },
+    { category: "Programming Languages", items: ["Python", "Java"] },
+    { category: "Core Competencies", items: ["Problem Solving", "3D Technology & Printing", "Data Structures & Algorithms (DSA)", "SQL", "DBMS", "Product Design"] },
     { category: "Tools & Platforms", items: ["Git", "Vercel", "Google Colab", "GitHub", "VS Code", "Autocad", "SolidWorks", "Tinkercad", "Postman", "Robodk", "Canva"] },
-    { category: "Core Competencies", items: ["Problem Solving", "3D Technology & Printing", "Data Structures & Algorithms (DSA)", "SQL", "DBMS", "Product Design"] }
+    { category: "Other Skills", items: ["Communication", "Adaptability", "Multi-tasking", "Teamwork and Collaboration"] },
   ];
 
   const interests = [
