@@ -28,11 +28,11 @@ const Projects = () => {
     {
       id: 3,
       title: "Healynx",
-      description: "Healynx is an AI-powered clinical platform that uses a patient's medical history and real-time biometric data to create personalized recovery plans and predict health risks. It bridges the gap between hospital treatment and home care by providing clinicians with a decision-support tool and patients with a mobile app that offers real-time feedback and oversight.",
+      description: "Healynx is a privacy-first healthcare platform designed to manage electronic health records using encryption, role-based access control, and AI-driven summarization, enabling secure data sharing and efficient, informed clinical decision-making.",
       icon: HeartPulse,
-      technologies: ["Node.js", "Python", "HTML", "CSS", "ML"],
-      githubUrl: "https://github.com/BABIN-JOE/Skillyzer",
-      liveUrl: "#",
+      technologies: ["Python (FastAPI)", "React", "PostgreSQL", "AI"],
+      githubUrl: "https://github.com/BABIN-JOE/Healynx",
+      liveUrl: "https://healynx-med.vercel.app/",
       featured: false
     },
     {

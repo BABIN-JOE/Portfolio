@@ -4,7 +4,7 @@ const About = () => {
   const skills = [
     { category: "Programming Languages", items: ["Python", "Java"] },
     { category: "Core Competencies", items: ["Problem Solving", "3D Technology & Printing", "Data Structures & Algorithms (DSA)", "SQL", "DBMS", "Product Design"] },
-    { category: "Tools & Platforms", items: ["Git", "Vercel", "Google Colab", "GitHub", "VS Code", "Autocad", "SolidWorks", "Tinkercad", "Postman", "Robodk", "Canva"] },
+    { category: "Tools & Platforms", items: ["Git", "Vercel", "Google Colab", "GitHub", "VS Code", "Autocad", "SolidWorks", "Tinkercad", "Robodk", "Canva"] },
     { category: "Other Skills", items: ["Communication", "Adaptability", "Multi-tasking", "Teamwork and Collaboration"] },
   ];
 
