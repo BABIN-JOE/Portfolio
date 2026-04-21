@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useEffect, useLayoutEffect, useState } from "react";
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -13,7 +13,6 @@ import Education from "./pages/Education";
 import Resume from "./pages/Resume";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
-import { useLayoutEffect } from "react";
 
 const queryClient = new QueryClient();
 
@@ -28,22 +27,22 @@ function ScrollToTop() {
 }
 
 const App = () => {
-  const [darkMode, setDarkMode] = useState(true);
-
-  useEffect(() => {
-    const saved = localStorage.getItem('darkMode');
-    if (saved !== null) {
-      setDarkMode(JSON.parse(saved));
+  const [darkMode, setDarkMode] = useState(() => {
+    const saved = window.localStorage.getItem('darkMode');
+    if (saved === null) {
+      return true;
     }
-  }, []);
+
+    try {
+      return JSON.parse(saved);
+    } catch {
+      return true;
+    }
+  });
 
   useEffect(() => {
     localStorage.setItem('darkMode', JSON.stringify(darkMode));
-    if (darkMode) {
-      document.documentElement.classList.remove('light');
-    } else {
-      document.documentElement.classList.add('light');
-    }
+    document.documentElement.classList.toggle('light', !darkMode);
   }, [darkMode]);
 
   const toggleDarkMode = () => {
@@ -56,8 +55,8 @@ const App = () => {
         <Toaster />
         <Sonner />
         <BrowserRouter>
-          <ScrollToTop /> {/* Scroll to top on route change */}
-          <div className="min-h-screen bg-background text-foreground">
+          <ScrollToTop />
+          <div className="min-h-screen overflow-x-hidden bg-background text-foreground">
             <Navigation darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
             <Routes>
               <Route path="/" element={<Home />} />

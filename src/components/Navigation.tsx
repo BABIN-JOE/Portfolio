@@ -25,22 +25,22 @@ const Navigation = ({ darkMode, toggleDarkMode }: NavigationProps) => {
   const isActive = (path: string) => location.pathname === path;
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-lg border-b border-border">
+    <nav className="fixed left-0 right-0 top-0 z-50 border-b border-border bg-background/90 shadow-sm backdrop-blur-xl">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <Link to="/" className="font-display font-bold text-xl gradient-text">
+          <Link to="/" className="font-display text-xl font-bold gradient-text">
             Babin Joe
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex items-center gap-1">
             {navItems.map((item) => (
               <Link
                 key={item.path}
                 to={item.path}
-                className={`transition-colors hover:text-primary ${
-                  isActive(item.path) ? 'text-primary font-medium' : 'text-muted-foreground'
+                className={`rounded-md px-3 py-2 text-sm font-medium transition-colors hover:bg-primary/10 hover:text-primary ${
+                  isActive(item.path) ? 'bg-primary/10 text-primary' : 'text-foreground/70'
                 }`}
               >
                 {item.label}
@@ -51,7 +51,8 @@ const Navigation = ({ darkMode, toggleDarkMode }: NavigationProps) => {
               variant="ghost"
               size="icon"
               onClick={toggleDarkMode}
-              className="ml-4"
+              className="ml-3"
+              aria-label={darkMode ? 'Switch to light theme' : 'Switch to dark theme'}
             >
               {darkMode ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
             </Button>
@@ -63,6 +64,7 @@ const Navigation = ({ darkMode, toggleDarkMode }: NavigationProps) => {
               variant="ghost"
               size="icon"
               onClick={toggleDarkMode}
+              aria-label={darkMode ? 'Switch to light theme' : 'Switch to dark theme'}
             >
               {darkMode ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
             </Button>
@@ -70,6 +72,7 @@ const Navigation = ({ darkMode, toggleDarkMode }: NavigationProps) => {
               variant="ghost"
               size="icon"
               onClick={() => setIsOpen(!isOpen)}
+              aria-label={isOpen ? 'Close navigation menu' : 'Open navigation menu'}
             >
               {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </Button>
@@ -79,7 +82,7 @@ const Navigation = ({ darkMode, toggleDarkMode }: NavigationProps) => {
         {/* Mobile Navigation */}
         {isOpen && (
           <div className="md:hidden">
-            <div className="px-2 pt-2 pb-3 space-y-1 bg-card rounded-lg mt-2 mb-4">
+            <div className="mt-2 mb-4 space-y-1 rounded-lg border border-border bg-card p-2 shadow-lg">
               {navItems.map((item) => (
                 <Link
                   key={item.path}
@@ -87,7 +90,7 @@ const Navigation = ({ darkMode, toggleDarkMode }: NavigationProps) => {
                   className={`block px-3 py-2 rounded-md text-base font-medium transition-colors ${
                     isActive(item.path)
                       ? 'text-primary bg-primary/10'
-                      : 'text-muted-foreground hover:text-primary'
+                      : 'text-foreground/70 hover:bg-primary/10 hover:text-primary'
                   }`}
                   onClick={() => setIsOpen(false)}
                 >

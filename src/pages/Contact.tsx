@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Mail, Phone, MapPin, Github, Linkedin, Send, MessageSquare, ExternalLink } from 'lucide-react';
+import { ExternalLink, Github, Linkedin, Mail, MapPin, Phone, Send } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
@@ -79,7 +79,7 @@ const Contact = () => {
       icon: MapPin,
       label: "Location",
       value: "Chennai, India",
-      href: "#"
+      href: ""
     }
   ];
 
@@ -156,7 +156,7 @@ const Contact = () => {
                     placeholder="your.email@example.com"
                   />
                   {emailError && (
-                    <p className="text-red-500 text-sm mt-2">{emailError}</p>
+                    <p className="mt-2 text-sm text-destructive">{emailError}</p>
                   )}
                 </div>
               </div>
@@ -219,20 +219,33 @@ const Contact = () => {
               <div className="space-y-4">
                 {contactInfo.map((item, index) => {
                   const Icon = item.icon;
-                  return (
-                    <a
-                      key={index}
-                      href={item.href}
-                      className="flex items-center p-4 rounded-lg bg-muted/50 hover:bg-primary/10 transition-colors group"
-                    >
+                  const content = (
+                    <>
                       <div className="p-3 bg-primary/10 rounded-lg mr-4 group-hover:bg-primary/20 transition-colors">
                         <Icon className="h-5 w-5 text-primary" />
                       </div>
-                      <div>
+                      <div className="min-w-0">
                         <div className="font-medium">{item.label}</div>
-                        <div className="text-muted-foreground">{item.value}</div>
+                        <div className="break-words text-muted-foreground">{item.value}</div>
                       </div>
+                    </>
+                  );
+
+                  return item.href ? (
+                    <a
+                      key={index}
+                      href={item.href}
+                      className="flex items-center rounded-lg bg-muted/50 p-4 transition-colors hover:bg-primary/10 group"
+                    >
+                      {content}
                     </a>
+                  ) : (
+                    <div
+                      key={index}
+                      className="flex items-center rounded-lg bg-muted/50 p-4 group"
+                    >
+                      {content}
+                    </div>
                   );
                 })}
               </div>
@@ -257,9 +270,9 @@ const Contact = () => {
                       <div className="p-3 bg-primary/10 rounded-lg mr-4 group-hover:bg-primary/20 transition-colors">
                         <Icon className="h-5 w-5 text-primary" />
                       </div>
-                      <div>
+                      <div className="min-w-0">
                         <div className="font-medium">{social.label}</div>
-                        <div className="text-muted-foreground">{social.username}</div>
+                        <div className="break-words text-muted-foreground">{social.username}</div>
                       </div>
                     </a>
                   );
@@ -273,7 +286,7 @@ const Contact = () => {
               <p className="text-muted-foreground mb-4">
                 I typically respond within 24 hours. For urgent matters, feel free to reach out via phone.
               </p>
-              <div className="flex justify-center space-x-4">
+              <div className="flex justify-center gap-4">
                 <div className="text-center">
                   <div className="text-2xl font-bold gradient-text">24h</div>
                   <div className="text-xs text-muted-foreground">Email Response</div>

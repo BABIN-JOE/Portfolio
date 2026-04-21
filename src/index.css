@@ -2,11 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Babin Joe Portfolio Design System - Dark tech theme with neon green accents */
+/* Babin Joe Portfolio Design System */
 
 @layer base {
   :root {
-    /* Dark theme base */
+    color-scheme: dark;
+
     --background: 224 71% 4%;
     --foreground: 213 31% 91%;
 
@@ -16,7 +17,6 @@
     --popover: 224 71% 6%;
     --popover-foreground: 213 31% 91%;
 
-    /* Neon green primary */
     --primary: 142 76% 36%;
     --primary-foreground: 224 71% 4%;
     --primary-glow: 142 86% 28%;
@@ -25,7 +25,7 @@
     --secondary-foreground: 213 31% 91%;
 
     --muted: 215 27% 12%;
-    --muted-foreground: 217 19% 60%;
+    --muted-foreground: 217 19% 68%;
 
     --accent: 142 76% 36%;
     --accent-foreground: 224 71% 4%;
@@ -37,57 +37,74 @@
     --input: 215 27% 17%;
     --ring: 142 76% 36%;
 
-    --radius: 0.75rem;
+    --radius: 0.5rem;
 
-    /* Gradients */
     --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-glow)));
     --gradient-hero: linear-gradient(135deg, hsl(var(--background)) 0%, hsl(215 27% 8%) 100%);
     --gradient-card: linear-gradient(145deg, hsl(var(--card)) 0%, hsl(215 27% 8%) 100%);
-    
-    /* Shadows and glows */
+
     --shadow-glow: 0 0 40px hsl(var(--primary-glow) / 0.3);
     --shadow-card: 0 10px 30px -10px hsl(0 0% 0% / 0.3);
     --shadow-elegant: 0 20px 60px -20px hsl(var(--primary) / 0.2);
 
-    /* Animation timings */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   }
 
   .light {
-    /* Light theme override */
-    --background: 0 0% 100%;
-    --foreground: 224 71% 4%;
+    color-scheme: light;
+
+    --background: 210 40% 98%;
+    --foreground: 222 47% 11%;
     --card: 0 0% 100%;
-    --card-foreground: 224 71% 4%;
+    --card-foreground: 222 47% 11%;
     --popover: 0 0% 100%;
-    --popover-foreground: 224 71% 4%;
-    --primary: 142 76% 36%;
+    --popover-foreground: 222 47% 11%;
+    --primary: 145 64% 28%;
     --primary-foreground: 0 0% 100%;
-    --secondary: 210 40% 96%;
-    --secondary-foreground: 224 71% 4%;
-    --muted: 210 40% 96%;
-    --muted-foreground: 215 16% 47%;
-    --accent: 142 76% 36%;
+    --primary-glow: 158 68% 34%;
+    --secondary: 210 40% 94%;
+    --secondary-foreground: 222 47% 11%;
+    --muted: 210 36% 93%;
+    --muted-foreground: 215 22% 30%;
+    --accent: 145 64% 28%;
     --accent-foreground: 0 0% 100%;
+    --destructive: 0 72% 45%;
+    --destructive-foreground: 0 0% 100%;
     --border: 214 32% 91%;
     --input: 214 32% 91%;
-    --ring: 142 76% 36%;
+    --ring: 145 64% 28%;
+
+    --gradient-primary: linear-gradient(135deg, hsl(145 64% 28%), hsl(158 68% 34%));
+    --gradient-hero:
+      radial-gradient(circle at 20% 20%, hsl(145 64% 28% / 0.1), transparent 28rem),
+      linear-gradient(135deg, hsl(210 40% 98%) 0%, hsl(150 38% 96%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%) 0%, hsl(150 35% 98%) 100%);
+    --shadow-glow: 0 18px 45px -22px hsl(var(--primary) / 0.55);
+    --shadow-card: 0 18px 45px -28px hsl(215 32% 20% / 0.32);
+    --shadow-elegant: 0 22px 55px -30px hsl(var(--primary) / 0.4);
   }
 }
 
 @layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
   * {
     @apply border-border;
   }
 
   body {
-    @apply bg-background text-foreground font-sans;
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+
+  ::selection {
+    background: hsl(var(--primary) / 0.25);
   }
 }
 
 @layer components {
-  /* Glow button component */
   .glow-button {
     @apply relative overflow-hidden rounded-full px-8 py-4 font-semibold transition-all duration-300;
     background: var(--gradient-primary);
@@ -111,43 +128,71 @@
     animation: shimmer 0.6s ease-out;
   }
 
-  /* Profile image with glow */
   .profile-glow {
     @apply rounded-full border-4 border-primary/20;
     box-shadow: var(--shadow-elegant), 0 0 80px hsl(var(--primary) / 0.15);
   }
 
-  /* Animated text */
+  .light .profile-glow {
+    @apply border-primary/30;
+    box-shadow: var(--shadow-elegant), 0 0 70px hsl(var(--primary) / 0.12);
+  }
+
   .typing-animation {
-    @apply border-r-2 border-primary;
+    @apply border-r-2 border-primary pr-1;
     animation: blink 1s infinite;
   }
 
-  /* Card with gradient */
   .gradient-card {
     background: var(--gradient-card);
     box-shadow: var(--shadow-card);
-    @apply rounded-2xl border border-border/50;
+    @apply rounded-lg border border-border/80 text-card-foreground transition-shadow duration-300;
   }
 
-  /* Hover scale animation */
+  .gradient-card:hover {
+    box-shadow: var(--shadow-card), 0 18px 40px -32px hsl(var(--primary) / 0.45);
+  }
+
   .hover-scale {
-    @apply transition-transform duration-300 hover:scale-105;
+    @apply transition-transform duration-300;
   }
 
-  /* Tech logo styling */
+  .hover-scale:hover {
+    transform: translateY(-2px);
+  }
+
+  .social-link {
+    @apply inline-flex h-12 w-12 items-center justify-center rounded-full border border-border bg-card text-foreground shadow-sm transition-all duration-300;
+  }
+
+  .social-link:hover {
+    @apply -translate-y-1 border-primary bg-primary text-primary-foreground;
+    box-shadow: var(--shadow-glow);
+  }
+
+  .icon-badge {
+    @apply inline-flex items-center justify-center rounded-lg border border-primary/20 bg-primary/10 text-primary;
+  }
+
   .tech-logo {
-    @apply opacity-60 transition-all duration-300 hover:opacity-100 hover:scale-110;
-    filter: grayscale(1);
+    @apply text-foreground/80 transition-all duration-300 hover:text-foreground;
+    opacity: 0.8;
+    filter: grayscale(0.35);
   }
 
   .tech-logo:hover {
+    opacity: 1;
     filter: grayscale(0);
+    transform: translateY(-2px);
+  }
+
+  .light .tech-logo {
+    opacity: 0.9;
+    filter: grayscale(0.15);
   }
 }
 
 @layer utilities {
-  /* Animation keyframes */
   @keyframes shimmer {
     0% { transform: translateX(-100%); }
     100% { transform: translateX(100%); }
@@ -174,7 +219,6 @@
     50% { transform: translateY(-10px); }
   }
 
-  /* Animation utilities */
   .animate-fade-in-up {
     animation: fadeInUp 0.6s ease-out;
   }
@@ -195,7 +239,42 @@
     animation-delay: 0.6s;
   }
 
-  /* Gradient text */
+  .animate-delay-800 {
+    animation-delay: 0.8s;
+  }
+
+  .animate-delay-1000 {
+    animation-delay: 1s;
+  }
+
+  .animate-delay-1200 {
+    animation-delay: 1.2s;
+  }
+
+  .animate-delay-1400 {
+    animation-delay: 1.4s;
+  }
+
+  .animate-delay-1600 {
+    animation-delay: 1.6s;
+  }
+
+  .animate-delay-1800 {
+    animation-delay: 1.8s;
+  }
+
+  .animate-delay-2000 {
+    animation-delay: 2s;
+  }
+
+  .animate-delay-2200 {
+    animation-delay: 2.2s;
+  }
+
+  .animate-delay-2400 {
+    animation-delay: 2.4s;
+  }
+
   .gradient-text {
     @apply bg-clip-text text-transparent;
     background-image: var(--gradient-primary);

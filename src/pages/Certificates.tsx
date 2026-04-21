@@ -361,20 +361,20 @@ const Certificates = () => {
         <section className="mb-16">
           <h2 className="font-display font-bold text-3xl mb-8 text-center gradient-text">PwC Badges</h2>
           <div className="flex flex-wrap gap-8 justify-center">
-            <a href="https://pwc.tekstac.com/blocks/tekbadges/badge.php?id=36592" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center">
-              <img src="/pwc badges/Salesforce.png" alt="Salesforce Badge" className="h-32 rounded shadow-lg mb-2 cursor-pointer" />
+            <a href="https://pwc.tekstac.com/blocks/tekbadges/badge.php?id=36592" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center rounded-lg border border-border bg-card p-4 shadow-sm transition-transform hover:-translate-y-1">
+              <img src="/pwc badges/Salesforce.png" alt="Salesforce Badge" className="mb-3 h-28 rounded object-contain" />
               <span className="text-sm text-muted-foreground">Salesforce</span>
             </a>
-            <a href="https://pwc.tekstac.com/blocks/tekbadges/badge.php?id=27773" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center">
-              <img src="/pwc badges/RDBMS.png" alt="RDBMS Badge" className="h-32 rounded shadow-lg mb-2 cursor-pointer" />
+            <a href="https://pwc.tekstac.com/blocks/tekbadges/badge.php?id=27773" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center rounded-lg border border-border bg-card p-4 shadow-sm transition-transform hover:-translate-y-1">
+              <img src="/pwc badges/RDBMS.png" alt="RDBMS Badge" className="mb-3 h-28 rounded object-contain" />
               <span className="text-sm text-muted-foreground">RDBMS</span>
             </a>
-            <a href="https://pwc.tekstac.com/blocks/tekbadges/badge.php?id=32227" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center">
-              <img src="/pwc badges/Programming Fundamentals.png" alt="Programming Fundamentals Badge" className="h-32 rounded shadow-lg mb-2 cursor-pointer" />
+            <a href="https://pwc.tekstac.com/blocks/tekbadges/badge.php?id=32227" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center rounded-lg border border-border bg-card p-4 shadow-sm transition-transform hover:-translate-y-1">
+              <img src="/pwc badges/Programming Fundamentals.png" alt="Programming Fundamentals Badge" className="mb-3 h-28 rounded object-contain" />
               <span className="text-sm text-muted-foreground">Programming Fundamentals</span>
             </a>
-            <a href="https://pwc.tekstac.com/blocks/tekbadges/badge.php?id=25914" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center">
-              <img src="/pwc badges/IT Fundamentals.png" alt="IT Fundamentals Badge" className="h-32 rounded shadow-lg mb-2 cursor-pointer" />
+            <a href="https://pwc.tekstac.com/blocks/tekbadges/badge.php?id=25914" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center rounded-lg border border-border bg-card p-4 shadow-sm transition-transform hover:-translate-y-1">
+              <img src="/pwc badges/IT Fundamentals.png" alt="IT Fundamentals Badge" className="mb-3 h-28 rounded object-contain" />
               <span className="text-sm text-muted-foreground">IT Fundamentals</span>
             </a>
           </div>
@@ -384,17 +384,17 @@ const Certificates = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {certificates.map((cert, index) => (
             <div
-              key={cert.id}
-              className="gradient-card p-6 group hover-scale"
+              key={`${cert.issuer}-${cert.title}`}
+              className="gradient-card group flex h-full flex-col p-6 hover-scale"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               {/* Certificate Logo */}
-              <div className="text-5xl mb-6 group-hover:animate-float">
-                {cert.logo}
+              <div className="icon-badge mb-6 h-14 w-14 group-hover:animate-float">
+                <Award className="h-7 w-7" />
               </div>
 
               {/* Certificate Details */}
-              <div className="mb-6">
+              <div className="mb-6 flex-1">
                 <h3 className="font-display font-semibold text-lg mb-2">
                   {cert.title}
                 </h3>
@@ -423,7 +423,7 @@ const Certificates = () => {
               </div>
 
               {/* View Credential Button */}
-              <a href={cert.credentialUrl} target="_blank" rel="noopener noreferrer" className="block">
+              <a href={cert.credentialUrl} target="_blank" rel="noopener noreferrer" className="mt-auto block">
                 <Button 
                   size="sm" 
                   variant="outline" 
@@ -459,7 +459,7 @@ const Certificates = () => {
               </div>
               <div className="group">
                 <div className="text-3xl font-bold gradient-text mb-2 group-hover:scale-110 transition-transform">
-                  2023
+                  2025
                 </div>
                 <div className="text-muted-foreground">Latest Achievement</div>
               </div>

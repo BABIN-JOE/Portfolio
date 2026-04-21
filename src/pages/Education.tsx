@@ -94,8 +94,8 @@ const Education = () => {
                 <div className="gradient-card p-8 hover-scale">
                   {/* Header */}
                   <div className="mb-6">
-                    <div className="flex items-start justify-between flex-wrap gap-4 mb-4">
-                      <div>
+                    <div className="flex flex-wrap items-start justify-between gap-4 mb-4">
+                      <div className="min-w-0">
                         <h3 className="font-display font-semibold text-xl mb-2">
                           {edu.degree}
                         </h3>
@@ -106,16 +106,16 @@ const Education = () => {
                         )}
                         <p className="text-lg font-medium">{edu.institution}</p>
                       </div>
-                      <div className="text-right">
-                        <div className="flex items-center text-muted-foreground mb-2">
+                      <div className="w-full text-left sm:w-auto sm:text-right">
+                        <div className="flex items-center text-muted-foreground mb-2 sm:justify-end">
                           <Calendar className="h-4 w-4 mr-2" />
                           {edu.duration}
                         </div>
-                        <div className="flex items-center text-muted-foreground mb-2">
+                        <div className="flex items-center text-muted-foreground mb-2 sm:justify-end">
                           <MapPin className="h-4 w-4 mr-2" />
                           {edu.location}
                         </div>
-                        <div className="flex items-center text-primary font-semibold">
+                        <div className="flex items-center text-primary font-semibold sm:justify-end">
                           <GraduationCap className="h-4 w-4 mr-2" />
                           {edu.grade}
                         </div>
@@ -135,7 +135,7 @@ const Education = () => {
                     <ul className="space-y-2">
                       {edu.achievements.map((achievement, idx) => (
                         <li key={idx} className="flex items-start">
-                          <span className="text-primary mr-3 mt-1">•</span>
+                          <span className="mr-3 mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-primary" aria-hidden="true"></span>
                           <span className="text-muted-foreground">{achievement}</span>
                         </li>
                       ))}
@@ -149,7 +149,7 @@ const Education = () => {
                       {edu.courses.map((course) => (
                         <span
                           key={course}
-                          className="px-3 py-1 bg-muted rounded-full text-sm text-muted-foreground hover:text-foreground transition-colors"
+                          className="rounded-full border border-border/70 bg-muted/70 px-3 py-1 text-sm text-foreground/75 transition-colors hover:text-foreground"
                         >
                           {course}
                         </span>
@@ -168,7 +168,7 @@ const Education = () => {
             Skills Developed Through Education
           </h2>
           <div className="gradient-card p-8">
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+            <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
               {skills.map((skill, index) => (
                 <div
                   key={skill}

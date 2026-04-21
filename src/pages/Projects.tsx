@@ -1,4 +1,4 @@
-import { Github, ExternalLink, Star } from 'lucide-react';
+import { ClipboardList, ExternalLink, FileText, Github, HeartPulse, Mic2, Pill, Star } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
 
@@ -9,7 +9,7 @@ const Projects = () => {
       id: 1,
       title: "Fluent Edge",
       description: "AI-powered web application using Flask and NLP tools that converts live speech to text, restores punctuation, detects grammatical errors, and analyzes accuracy percentage.",
-      image: "🗣️",
+      icon: Mic2,
       technologies: ["Flask", "NLP", "Speech Recognition", "Python", "Tailwind CSS"],
       githubUrl: "https://github.com/BABIN-JOE/FLUENT-EDGE",
       liveUrl: "#",
@@ -19,7 +19,7 @@ const Projects = () => {
       id: 2,
       title: "NeuroDoc",
       description: "AI application that extracts and summarizes PDF and scanned document content using OCR, NLP, and layout analysis. Provides structured overview, document categorization, and key points without internet access.",
-      image: "📄",
+      icon: FileText,
       technologies: ["OCR", "NLP", "Python", "Document Analysis"],
       githubUrl: "https://github.com/BABIN-JOE/NeuroDoc",
       liveUrl: "#",
@@ -29,7 +29,7 @@ const Projects = () => {
       id: 3,
       title: "Healynx",
       description: "Healynx is an AI-powered clinical platform that uses a patient's medical history and real-time biometric data to create personalized recovery plans and predict health risks. It bridges the gap between hospital treatment and home care by providing clinicians with a decision-support tool and patients with a mobile app that offers real-time feedback and oversight.",
-      image: "🩺",
+      icon: HeartPulse,
       technologies: ["Node.js", "Python", "HTML", "CSS", "ML"],
       githubUrl: "https://github.com/BABIN-JOE/Skillyzer",
       liveUrl: "#",
@@ -39,7 +39,7 @@ const Projects = () => {
       id: 4,
       title: "Attendance Management System",
       description: "A comprehensive system for tracking and managing student attendance, featuring user authentication, attendance reports, and easy integration for educational institutions. Built with Java and MySQL.",
-      image: "📚",
+      icon: ClipboardList,
       technologies: ["Java", "MySQL", "Swing"],
       githubUrl: "https://github.com/BABIN-JOE/Attendance-Management-System",
       liveUrl: "#",
@@ -49,7 +49,7 @@ const Projects = () => {
       id: 5,
       title: "Pharmacy Management System",
       description: "A desktop application for managing pharmacy inventory, sales, and billing. Includes modules for medicine stock, customer management, and transaction history. Developed using Java and MySQL.",
-      image: "💊",
+      icon: Pill,
       technologies: ["Java", "MySQL", "Swing"],
       githubUrl: "https://github.com/BABIN-JOE/Pharmacy-Management-System",
       liveUrl: "#",
@@ -80,19 +80,23 @@ const Projects = () => {
             Featured Projects
           </h2>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            {featuredProjects.map((project, index) => (
-              <div
-                key={project.id}
-                className="gradient-card p-8 group hover-scale"
-                style={{ animationDelay: `${index * 0.2}s` }}
-              >
-                <div className="text-6xl mb-6 group-hover:animate-float">
-                  {project.image}
-                </div>
+            {featuredProjects.map((project, index) => {
+              const Icon = project.icon;
+              const hasLiveDemo = project.liveUrl && project.liveUrl !== "#";
+
+              return (
+                <div
+                  key={project.id}
+                  className="gradient-card group flex h-full flex-col p-8 hover-scale"
+                  style={{ animationDelay: `${index * 0.2}s` }}
+                >
+                  <div className="icon-badge mb-6 h-16 w-16 group-hover:animate-float">
+                    <Icon className="h-8 w-8" />
+                  </div>
                 <h3 className="font-display font-semibold text-xl mb-4">
                   {project.title}
                 </h3>
-                <p className="text-muted-foreground mb-6 leading-relaxed">
+                <p className="mb-6 flex-1 leading-relaxed text-muted-foreground">
                   {project.description}
                 </p>
                 <div className="flex flex-wrap gap-2 mb-6">
@@ -105,7 +109,7 @@ const Projects = () => {
                     </span>
                   ))}
                 </div>
-                <div className="flex space-x-4">
+                <div className="flex flex-wrap gap-3">
                   <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className="block">
                     <Button size="sm" className="group/btn">
                       <Github className="h-4 w-4 mr-2" />
@@ -113,13 +117,22 @@ const Projects = () => {
                       <ExternalLink className="h-3 w-3 ml-2 transition-transform group-hover/btn:translate-x-1 group-hover/btn:-translate-y-1" />
                     </Button>
                   </a>
-                  <Button size="sm" variant="outline">
-                    <ExternalLink className="h-4 w-4 mr-2" />
-                    Live Demo
-                  </Button>
+                  {hasLiveDemo ? (
+                    <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="block">
+                      <Button size="sm" variant="outline">
+                        <ExternalLink className="h-4 w-4 mr-2" />
+                        Live Demo
+                      </Button>
+                    </a>
+                  ) : (
+                    <Button size="sm" variant="outline" disabled>
+                      Demo Soon
+                    </Button>
+                  )}
                 </div>
-              </div>
-            ))}
+                </div>
+              );
+            })}
           </div>
         </section>
 
@@ -129,19 +142,23 @@ const Projects = () => {
             Other Projects
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
-            {otherProjects.map((project, index) => (
-              <div
-                key={project.id}
-                className="gradient-card p-6 group hover-scale"
-                style={{ animationDelay: `${index * 0.1}s` }}
-              >
-                <div className="text-4xl mb-4 group-hover:animate-float">
-                  {project.image}
-                </div>
+            {otherProjects.map((project, index) => {
+              const Icon = project.icon;
+              const hasLiveDemo = project.liveUrl && project.liveUrl !== "#";
+
+              return (
+                <div
+                  key={project.id}
+                  className="gradient-card group flex h-full flex-col p-6 hover-scale"
+                  style={{ animationDelay: `${index * 0.1}s` }}
+                >
+                  <div className="icon-badge mb-4 h-12 w-12 group-hover:animate-float">
+                    <Icon className="h-6 w-6" />
+                  </div>
                 <h3 className="font-semibold text-lg mb-3">
                   {project.title}
                 </h3>
-                <p className="text-muted-foreground text-sm mb-4 leading-relaxed">
+                <p className="mb-4 flex-1 text-sm leading-relaxed text-muted-foreground">
                   {project.description}
                 </p>
                 <div className="flex flex-wrap gap-1 mb-4">
@@ -159,18 +176,23 @@ const Projects = () => {
                     </span>
                   )}
                 </div>
-                <div className="flex space-x-2">
+                <div className="flex gap-2">
                   <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className="block">
-                    <Button size="sm" variant="ghost" className="p-2">
+                    <Button size="sm" variant="ghost" className="p-2" aria-label={`${project.title} code`}>
                       <Github className="h-4 w-4" />
                     </Button>
                   </a>
-                  <Button size="sm" variant="ghost" className="p-2">
-                    <ExternalLink className="h-4 w-4" />
-                  </Button>
+                  {hasLiveDemo && (
+                    <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="block">
+                      <Button size="sm" variant="ghost" className="p-2" aria-label={`${project.title} live demo`}>
+                        <ExternalLink className="h-4 w-4" />
+                      </Button>
+                    </a>
+                  )}
                 </div>
-              </div>
-            ))}
+                </div>
+              );
+            })}
           </div>
         </section>
 
